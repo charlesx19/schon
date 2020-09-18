@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            height:auto;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <div class="head">
+                <div class="switch">
+                    <ul>
+                        <li>featured</li>
+                        <li>latest</li>
+                        <li>best seller</li>
+                    </ul>
+                </div>
+                <div class="turn">
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="product-info">
+                <div class="product-photo">
+                    <img src="https://via.placeholder.com/765x579/000000/FFFFFF/?text=ONE" alt="logo">
+                </div>
+                <div class="info">
+                    <p>Lorem, ipsum dolor.</p>
+                    <h4 class="title">Lorem, ipsum.</h4>
+                    <p class="price">$ 399</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-photo">
+                    <img src="https://via.placeholder.com/765x579/000000/FFFFFF/?text=ONE" alt="logo">
+                </div>
+                <div class="info">
+                    <p>Lorem, ipsum dolor.</p>
+                    <h4 class="title">Lorem, ipsum.</h4>
+                    <p class="price">$ 399</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-photo">
+                    <img src="https://via.placeholder.com/765x579/000000/FFFFFF/?text=ONE" alt="logo">
+                </div>
+                <div class="info">
+                    <p>Lorem, ipsum dolor.</p>
+                    <h4 class="title">Lorem, ipsum.</h4>
+                    <p class="price">$ 399</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-photo">
+                    <img src="https://via.placeholder.com/765x579/000000/FFFFFF/?text=FOUR" alt="logo">
+                </div>
+                <div class="info">
+                    <p>Lorem, ipsum dolor.</p>
+                    <h4 class="title">Lorem, ipsum.</h4>
+                    <p class="price">$ 399</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.box').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: '<span class="prev">L</span>',
+                nextArrow: '<span class="next">R</span>'
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
