@@ -1,3 +1,4 @@
+@import "about.less";
 
 @color_1: #a1a1a1;
 
@@ -30,6 +31,30 @@ ul {
 .container-fluid {
     margin: 0;
     padding: 0;
+}
+
+.shopping-cart {
+    position: relative;
+    padding-left: 10px;
+    color: #000;
+    .icon {
+        position: relative;
+        margin-right: 10px;
+        top: 3px;
+        i {
+            font-size: 24px;
+        }
+    }
+    h6 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    p,span {
+        margin-bottom: 0;
+        font-size: 13px;
+    }
 }
 
 
@@ -86,7 +111,7 @@ ul {
     .hambergerg-area {
         display: flex;
         flex-direction: column;
-        height: 6vh;
+        height: 44px;
         overflow: hidden;
         transition: all .5s;
         &.open {
@@ -143,30 +168,6 @@ ul {
             .search {
                 i {
                     font-size: 24px;
-                }
-            }
-
-            .shopping-cart {
-                position: relative;
-                padding-left: 30px;
-                color: #000;
-                .icon {
-                    position: absolute;
-                    left: 0;
-                    top: 4px;
-                    i {
-                        font-size: 24px;
-                    }
-                }
-                h6 {
-                    margin-bottom: 0;
-                    text-transform: uppercase;
-                    font-size: 13px;
-                    font-weight: bolder;
-                }
-                p,span {
-                    margin-bottom: 0;
-                    font-size: 13px;
                 }
             }
         }
