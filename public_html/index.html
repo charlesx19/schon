@@ -993,24 +993,15 @@
                 prevArrow: '.bestSeller-button-left',
                 nextArrow: '.bestSeller-button-right'
             });
-
-            var deviceWidth = 6;
-            $(window).resize(function(){
-                var userWidth = $('body').innerWidth();
-                if (userWidth < 992) {
-                    deviceWidth = 3;
-                }
-                console.log(deviceWidth);
-            })
-
-            
-            
-
             $('.brands-box').slick({
-                slidesToShow: deviceWidth,
-                slidesToScroll: deviceWidth,
+                slidesToShow: 6,
+                slidesToScroll: 6,
                 prevArrow: '.switch-left',
                 nextArrow: '.switch-right'
+            });
+
+            $('.menu').click(function(){
+                $('.hambergerg-area').toggleClass('open');
             });
         });
 

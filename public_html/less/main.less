@@ -86,7 +86,12 @@ ul {
     .hambergerg-area {
         display: flex;
         flex-direction: column;
-        height: 40px;
+        height: 6vh;
+        overflow: hidden;
+        transition: all .5s;
+        &.open {
+            height: 90vh;
+        }
         .menu {
             padding: 10px 0;
             flex-grow: 0;
@@ -94,7 +99,7 @@ ul {
             background: #4c4c4c;
         }
         .nav-items {
-            display: none;
+            display: flex;
             flex-direction: column;
             height: 100%;
             ul {
