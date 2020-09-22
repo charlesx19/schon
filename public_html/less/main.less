@@ -1,3 +1,4 @@
+
 @color_1: #a1a1a1;
 
 * {
@@ -22,6 +23,11 @@ a:hover {
 
 ul {
     display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
     margin: 0;
     padding: 0;
 }
@@ -77,21 +83,47 @@ ul {
             }
         }
     }
+    .hambergerg-area {
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        .menu {
+            padding: 10px 0;
+            flex-grow: 0;
+            color: white;
+            background: #4c4c4c;
+        }
+        .nav-items {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+            ul {
+                justify-content: space-around;
+                flex-grow: 1;
+                flex-direction: column;
+                a {
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid #eee;
+                    li {
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        color: #4c4c4c;
+                    }
+                }
+            }
+        }
+    }
     .header {
         .container {
-            display: flex;
-            height: auto;
-            width: 100%;
             padding-top: 30px;
             padding-bottom: 30px;
-            align-items: center;
             #logo {
-                width: 320px;
-                height: 100%;
+                
             }
             #nav {
-                width: 645px;
-                height: 100%;
                 ul {
                     margin-bottom: 0;
                 }
@@ -104,8 +136,6 @@ ul {
                 }
             }
             .search {
-                width: 60px;
-                height: 100%;
                 i {
                     font-size: 24px;
                 }
@@ -113,8 +143,6 @@ ul {
 
             .shopping-cart {
                 position: relative;
-                width: 175px;
-                height: 100%;
                 padding-left: 30px;
                 color: #000;
                 .icon {
@@ -125,13 +153,11 @@ ul {
                         font-size: 24px;
                     }
                 }
-                .cart-title {
+                h6 {
+                    margin-bottom: 0;
                     text-transform: uppercase;
                     font-size: 13px;
                     font-weight: bolder;
-                }
-                h6 {
-                    margin-bottom: 0;
                 }
                 p,span {
                     margin-bottom: 0;
@@ -141,6 +167,7 @@ ul {
         }
     }
 }
+
 
 #main-products {
     .main-products-top {
@@ -262,7 +289,7 @@ ul {
             height: 100%;
             .brick-right-top {
                 padding: 25px;
-                margin-bottom: 19px;
+                margin-bottom: 20px;
                 height: 275px;
                 background: #f8f8f8;
                 text-align: right;
@@ -366,7 +393,7 @@ ul {
             height: 579px;
             .brick-left-top {
                 padding: 45px 40px 0 0;
-                margin-bottom: 22px;
+                margin-bottom: 20px;
                 height: 223px;
                 text-align: right;
                 background: #d0e9b0;
@@ -579,7 +606,7 @@ ul {
 
 #promo-products {
     padding-top: 65px;
-    .col {
+    .col-12 {
         height: 210px;
         padding: 40px;
         background: #f8f8f8;
@@ -835,6 +862,12 @@ ul {
         right: 0;
         line-height: 35px;
     }
+    .brands-rwd {
+        .brand {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
 }
 
 #footer {
@@ -844,7 +877,7 @@ ul {
     .footer-top {
         padding: 65px 0 50px 0;
         border-bottom: 1px solid #e0e0e0;
-        .col {
+        .col-12 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1009,3 +1042,6 @@ ul {
         }
     }
 }
+
+
+@import "rwd.less";

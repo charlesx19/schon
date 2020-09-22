@@ -10,6 +10,8 @@
     
     <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
 
@@ -21,7 +23,7 @@
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-12 col-md-6 ">
                         <a href="tel:+1-555-333-22-11" class="top-link">
                             <i class="fas fa-phone-alt"></i>
                             +1 (555) 333 22 11
@@ -31,7 +33,7 @@
                             info@schon.chairs
                         </a>
                     </div>
-                    <div class="col-4 text-right">
+                    <div class="d-none d-md-block col-md-6 text-right">
                         <a href="#" class="top-link">Order Track</a>
                         <a href="#" class="top-link">My Account</a>
                         <a href="#" class="top-link">Checkout</a>
@@ -39,31 +41,62 @@
                 </div>
             </div>
         </div>
-        <div class="header">
-            <div class="container">
-                <div id="logo">
-                    <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+        <div class="container-fluid d-md-none pb-5">
+            <div class="hambergerg-area text-center">
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <div id="nav">
-                    <ul class="d-flex">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">products</a></li>
-                        <li><a href="#">pages</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
+                <div class="nav-items">
+                    <ul>
+                        <a href="#"><li>home</li></a>
+                        <a href="#"><li>product</li></a>
+                        <a href="#"><li>pages</li></a>
+                        <a href="#"><li>about</li></a>
+                        <a href="#"><li>blog</li></a>
+                        <a href="#"><li>contact</li></a>
+                        <a href="#"><li><i class="fas fa-search"></i></li></a>
                     </ul>
                 </div>
-                <div class="search">
-                    <i class="fas fa-search"></i>
-                </div>
-                <a href="#" class="shopping-cart">
-                    <div class="icon">
-                        <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+        
+        <div class="header d-none d-md-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <div id="logo">
+                            <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                        </div>
                     </div>
-                    <h6 class="cart-title">shopping cart</h6>
-                    <p><span>3 </span>items $<span>74.00</span></p>
-                </a>
+                    <div class="col-6">
+                        <div id="nav">
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">products</a></li>
+                                <li><a href="#">pages</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1 text-center">
+                        <div class="search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="col pl-3">
+                        <a href="#" class="shopping-cart d-flex">
+                            <div class="icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="cart-info">
+                                <h6>shopping cart</h6>
+                                <p><span>3 </span>items $<span>74.00</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -71,7 +104,7 @@
     <section id="main-products">
         <div class="container">
             <div class="row main-products-top no-gutters">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="new-collection">
                         <div class="info">
                             <h4 class="subtitle">furniture designs ideas</h4>
@@ -87,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 padding-brick">
+                <div class="col-12 col-md-6 col-lg-3 padding-brick">
                     <div class="brick-left">
                         <h4 class="subtitle">sofas & armchairs</h4>
                         <h3 class="title">
@@ -100,7 +133,7 @@
                         <a href="#">shop now<span><i class="fas fa-angle-right"></i></span></a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="brick-right">
                         <div class="row no-gutters">
                             <div class="col-12 brick-right-top">
@@ -138,7 +171,7 @@
             </div>
 
             <div class="row main-products-bottom">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="brick-left">
                         <div class="row no-gutters">
                             <div class="col-12 brick-left-top">
@@ -154,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8 rwd-mg">
                     <div class="brick-right">
                         <div id="promo-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-indicators carousel-dots-box">
@@ -207,7 +240,7 @@
         </div>
     </section>
 
-    <section id="carousel-products">
+    <section id="carousel-products" class="d-none d-md-block">
         <div class="container">
             <div class="row">
                 <div class="col-12 carousel-header">
@@ -381,17 +414,17 @@
     <section id="promo-products">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <p class="subtitle">wall decor</p>
                     <div class="title">CLOCKs</div>
                     <a href="#" class="view-more">view<span><i class="fas fa-angle-right"></i></span></a>
                 </div>
-                <div class="col bg-gray">
+                <div class="col-12 col-md-4 bg-gray">
                     <p class="subtitle">coffee tables</p>
                     <div class="title">S.O.S BLOCKS</div>
                     <a href="#" class="view-more">view<span><i class="fas fa-angle-right"></i></span></a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <p class="subtitle">floor lamps</p>
                     <div class="title">ROCKING LAMP</div>
                     <a href="#" class="view-more">view<span><i class="fas fa-angle-right"></i></span></a>
@@ -400,7 +433,7 @@
         </div>
     </section>
 
-    <section id="carousel-bestSeller">
+    <section id="carousel-bestSeller" class="d-none d-lg-block">
         <div class="container">
             <div class="row no-gutters header">
                 <div class="col">
@@ -657,7 +690,7 @@
                     <div class="title">brands<span>furniture</span></div>
                 </div>
             </div>
-            <div class="brands">
+            <div class="brands d-none d-md-block">
                 <button type="button" class="switch-left" aria-label="Previous">
                     <i class="fas fa-angle-left"></i>
                 </button>
@@ -718,6 +751,61 @@
                 </div>
             </div>
         </div>
+        <div class="container brands-rwd d-md-none">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="brand">
+                        <img src="https://via.placeholder.com/110x35/9d9d9d/FFFFFF/?text=110x35" alt="brand">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
     </section>
 
     <div id="footer">
@@ -725,7 +813,7 @@
             <div class="container">
                 <div class="footer-top">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-md-3">
                             <div class="icon">
                                 <i class="fas fa-plane"></i>
                             </div>
@@ -738,7 +826,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-3">
                             <div class="icon">
                                 <i class="far fa-life-ring"></i>
                             </div>
@@ -751,7 +839,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-3">
                             <div class="icon">
                                 <i class="fas fa-box-open"></i>
                             </div>
@@ -764,7 +852,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-3">
                             <div class="icon">
                                 <i class="far fa-money-bill-alt"></i>
                             </div>
@@ -781,7 +869,7 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="row">
-                        <div class="first col-3">
+                        <div class="first col-12 col-md-3">
                             <div class="logo">
                                 <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
                             </div>
@@ -803,7 +891,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="second col-2">
+                        <div class="second col-12 col-md-2">
                             <div class="title">categories</div>
                             <ul>
                                 <li><a href="#">chairs</a></li>
@@ -814,7 +902,7 @@
                                 <li><a href="#">new</a></li>
                             </ul>
                         </div>
-                        <div class="third col-2">
+                        <div class="third col-12 col-md-2">
                             <div class="title">information</div>
                             <ul>
                                 <li><a href="#">about us</a></li>
@@ -825,7 +913,7 @@
                                 <li><a href="#">FAQs</a></li>
                             </ul>
                         </div>
-                        <div class="fourth col-2">
+                        <div class="fourth col-12 col-md-2">
                             <div class="title">account</div>
                             <ul>
                                 <li><a href="#">my account</a></li>
@@ -835,7 +923,7 @@
                                 <li><a href="#">checkout</a></li>
                             </ul>
                         </div>
-                        <div class="fifth col-3 text-right">
+                        <div class="fifth col-12 col-md-3 text-md-right mb-3">
                             <div class="title">sign up newsletter</div>
                             <div class="subscribe-box text-left">
                                 <input type="text" placeholder="Your email">
@@ -860,14 +948,16 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <span>©</span>
-                        <div class="logo">
-                            <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                    <div class="col-12 col-md-6">
+                        <div class="box">
+                            <span>©</span>
+                            <div class="logo">
+                                <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                            </div>
+                            <span>-All right Reserved</span>
                         </div>
-                        <span>-All right Reserved</span>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <ul>
                             <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
                             <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
@@ -903,10 +993,22 @@
                 prevArrow: '.bestSeller-button-left',
                 nextArrow: '.bestSeller-button-right'
             });
+
+            var deviceWidth = 6;
+            $(window).resize(function(){
+                var userWidth = $('body').innerWidth();
+                if (userWidth < 992) {
+                    deviceWidth = 3;
+                }
+                console.log(deviceWidth);
+            })
+
             
+            
+
             $('.brands-box').slick({
-                slidesToShow: 6,
-                slidesToScroll: 6,
+                slidesToShow: deviceWidth,
+                slidesToScroll: deviceWidth,
                 prevArrow: '.switch-left',
                 nextArrow: '.switch-right'
             });
