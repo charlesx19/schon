@@ -1,0 +1,285 @@
+* {
+    color: #494949;
+}
+
+#header {
+    .left-area {
+        display: flex;
+        .logo {
+            width: 113px;
+            height: 31px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        a {
+            margin-left: 25px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 31px;
+            color: #494949;
+        }
+    }
+    .right-area {
+        display: flex;
+        justify-content: flex-end;
+        ul {
+            li {
+                margin-left: 30px;
+            }
+            a {
+                font-size: 14px;
+                color: #494949;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        .shortcut-icon {
+            margin-left: 40px;
+            a {
+                position: relative;
+                margin-left: 30px;
+            }
+            i {
+                font-size: 24px;
+                color: #494949;
+                &.fa-shopping-bag::after {
+                    content: '3';
+                    position: absolute;
+                    right: -15px;
+                    bottom: -10px;
+                    width: 25px;
+                    height: 25px;
+                    font-size: 12px;
+                    color: white;
+                    line-height: 22px;
+                    text-align: center;
+                    background: #000;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                }
+            }
+        }
+    }
+    .hambergerg-area {
+        .menu {
+            i {
+                color: white;
+            }
+        }
+    }
+}
+
+#content {
+    > div {
+        padding: 90px 0;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p.desc {
+        font-size: 12px;
+        line-height: 30px;
+        span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .header {
+        padding: 75px 0 60px 0;
+        background: #f4f4f4;
+        text-align: center;
+        .title {
+            margin-bottom: 1rem;
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #494949;
+            letter-spacing: 1px;
+        }
+        #breadcrumbs {
+            li {
+                font-size: 12px;
+                text-transform: capitalize;
+                color: #494949;
+                a {
+                    color: #494949;
+                }
+            }
+            .angle-right {
+                margin: 0 15px;
+            }
+        }
+    }
+
+    .main-content {
+        .social-medias {
+            .title {
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+            li {
+                margin-right: 16px;
+            }
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .ourTeam {
+        padding-top: 0;
+        .info {
+            margin-top: 1rem;
+            padding-left: .5rem;
+            border-left: 7px solid #eee;
+        }
+        .name {
+            margin: 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #c9c9c9;
+        }
+         img {
+             width: 100%;
+             height: auto;
+         }
+    }
+
+    .carousel-area {
+        // 不知道怎麼讓左右的slide呈現半透明狀態，
+        // 所以用土法煉鋼的偽元素遮罩方式，但一改變解析度就會破版
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 10%;
+        //     height: 100%;
+        //     left: 0;
+        //     top: 0;
+        //     background: rgba(255,255,255,0.9);
+        //     z-index: 99;
+        // }
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 10%;
+        //     height: 100%;
+        //     right: 0;
+        //     top: 0;
+        //     background: rgba(255,255,255,0.9);
+        //     z-index: 99;
+        // }
+        position: relative;
+        padding-top: 0;
+        .angle-left {
+            position: absolute;
+            left: 8%;
+            top: 42%;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+        .angle-right {
+            position: absolute;
+            right: 8%;
+            top: 42%;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+        i {
+            font-size: 30px;
+            -webkit-text-stroke: 1px white;
+        }
+        .photo {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slick-dots {
+            justify-content: center;
+            li {
+                margin: 40px 5px;
+                width: 92px;
+                height: 3px;
+                font-size: 0;
+                background: #ececec;
+                &.slick-active {
+                    background: #b6b6b6;
+                }
+            }
+            button {
+                border: none;
+            }
+        }
+    }
+}
+
+#footer {
+    .footer-bottom {
+        .row {
+            p,i  {
+                color: #a0a0a0;
+            }
+        }
+        .fifth {
+            p.desc {
+                width: 69%;
+                margin: 0 0 25px auto;
+            }
+            .subscribe-box {
+                position: relative;
+                input {
+                    width: 100%;
+                    padding: 10px 0 10px 30px;
+                    border: 1px solid #a0a0a0;
+                    border-radius: 20px;
+                    background: transparent;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #a0a0a0;
+                }
+                i {
+                    position: absolute;
+                    top: 50%;
+                    right: 7%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    .copyright {
+        .container {
+            ul {
+                li {
+                    margin-left: 6px;
+                }
+                a {
+                    color: #7a7a7a;
+                    i {
+                         color: #7a7a7a;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "aboutRWD.less";

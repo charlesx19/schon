@@ -19,16 +19,16 @@
 <body>
     
     <div id="header">
-        <div class="container-fluid">
+        <div class="container-fluid overflow-hidden">
             <div id="nav">
-                <div class="row">
-                    <div class="col-3">
+                <div class="row p-lg-5 py-3">
+                    <div class="col-md-12 col-lg-4 left-area">
                         <div class="logo">
-                            <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                            <img src="https://via.placeholder.com/228x62/000000/FFFFFF/?text=logo" alt="logo" class="">
                         </div>
-                        <a href="tel:+1-555-333-22-11">+1 (555) 333 22 11</a>
+                        <a href="tel:+1-555-333-22-11" class="d-none d-md-block">+1 (555) 333 22 11</a>
                     </div>
-                    <div class="col-9">
+                    <div class="col-md-12 col-lg-8 d-none d-md-flex right-area mt-sm-3 mt-lg-0">
                         <ul>
                             <li><a href="#">home</a></li>
                             <li><a href="#">product</a></li>
@@ -44,6 +44,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid d-md-none pb-5">
+                    <div class="hambergerg-area text-center">
+                        <div class="menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="nav-items">
+                            <ul>
+                                <a href="#"><li>home</li></a>
+                                <a href="#"><li>product</li></a>
+                                <a href="#"><li>pages</li></a>
+                                <a href="#"><li>about</li></a>
+                                <a href="#"><li>blog</li></a>
+                                <a href="#"><li>contact</li></a>
+                                <a href="#"><li><i class="fas fa-search"></i></li></a>
+                                <a href="#" class="shopping-cart d-flex">
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h6>shopping cart</h6>
+                                        <p><span>3 </span>items $<span>74.00</span></p>
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -55,9 +82,9 @@
                     <div class="col-12">
                         <h1 class="title">about us</h1>
                         <div id="breadcrumbs">
-                            <ul>
+                            <ul class="justify-content-center">
                                 <li><a href="#">home</a></li>
-                                <li><i class="fas fa-angle-right"></i></li>
+                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
                                 <li>about us</li>
                             </ul>
                         </div>
@@ -69,25 +96,26 @@
         <div class="main-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-5">
                         <h2 class="title">who we are?</h2>
                     </div>
                     <div class="col-12">
                         <p class="desc">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quam libero quas exercitationem. Accusamus reprehenderit impedit consectetur laboriosam debitis, id soluta magnam ullam necessitatibus. Aliquid nam atque cupiditate dolore voluptatibus magnam distinctio molestiae ab dolorem, animi velit nihil dolores reprehenderit necessitatibus? Laborum, architecto dolore nisi distinctio incidunt voluptate nam, 
+                            <br>
                             <span>
                                 eligendi fuga tempora perspiciatis debitis temporibus deleniti quam aspernatur modi rem.
                             </span>
                         </p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <p class="desc">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, maxime ullam fugit vitae ex architecto cupiditate dolore similique asperiores dignissimos, minus iure vel recusandae quam.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore id atque recusandae quaerat earum saepe voluptas pariatur repellendus veritatis doloremque nostrum excepturi, placeat repellat praesentium ipsa reiciendis aperiam, modi similique in cumque amet ipsam necessitatibus voluptatem?
                         </p>
                     </div>
                     <div class="col-12">
-                        <div class="social-madias">
-                            <div class="title">follow us</div>
+                        <div class="social-medias">
+                            <div class="title mb-3">follow us</div>
                             <div class="social-media">
                                 <ul>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -107,8 +135,164 @@
         <div class="ourTeam">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <h2 class="title">our team</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                        <div class="photo-box">
+                            <!-- <img src="https://via.placeholder.com/280x280/f8f8f8/515151/?text=photo 280x280" alt="member_photo" class="img-fluid"> -->
+                            <img src="https://source.unsplash.com/280x280/?ceo,woman" alt="product_photo" class="">
+                        </div>
+                        <div class="info">
+                            <h4 class="name">clara wooden</h4>
+                            <p>designer</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                        <div class="photo-box">
+                            <!-- <img src="https://via.placeholder.com/280x280/f8f8f8/515151/?text=photo 280x280" alt="member_photo" class="img-fluid"> -->
+                            <img src="https://source.unsplash.com/280x280/?Keanu" alt="product_photo" class="">
+                        </div>
+                        <div class="info">
+                            <h4 class="name">john wick</h4>
+                            <p>founder</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                        <div class="photo-box">
+                            <!-- <img src="https://via.placeholder.com/280x280/f8f8f8/515151/?text=photo 280x280" alt="member_photo" class="img-fluid"> -->
+                            <img src="https://source.unsplash.com/280x280/?ceo" alt="product_photo" class="">
+                        </div>
+                        <div class="info">
+                            <h4 class="name">harry kane</h4>
+                            <p>designer</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                        <div class="photo-box">
+                            <!-- <img src="https://via.placeholder.com/280x280/f8f8f8/515151/?text=photo 280x280" alt="member_photo" class="img-fluid"> -->
+                            <img src="https://source.unsplash.com/280x280/?handsome" alt="product_photo" class="">
+                        </div>
+                        <div class="info">
+                            <h4 class="name">charles tseng</h4>
+                            <p>designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ourWorkspace carousel-area d-none d-md-block">
+            <div class="angle-left">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="angle-right">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <h1 class="title">our workspace</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-items">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col pr-3">
+                            <div class="photo">
+                                <!-- <img src="https://via.placeholder.com/542x542/f8f8f8/515151/?text=photo 542x542" alt="product_photo" class=""> -->
+                                <img src="https://source.unsplash.com/542x542/?wood,furniture" alt="product_photo" class="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row h-100 no-gutters">
+                                <div class="col-5">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/240x308/f8f8f8/515151/?text=photo 240x308" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/240x308/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                                <div class="col-7 pl-3">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/384x308/f8f8f8/515151/?text=photo 384x308" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/384x308/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-3">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/640x220/f8f8f8/515151/?text=photo 640x220" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/640x220/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col pr-3">
+                            <div class="photo">
+                                <!-- <img src="https://via.placeholder.com/542x542/f8f8f8/515151/?text=photo 542x542" alt="product_photo" class=""> -->
+                                <img src="https://source.unsplash.com/542x542/?wood,furniture" alt="product_photo" class="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row h-100 no-gutters">
+                                <div class="col-5">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/240x308/f8f8f8/515151/?text=photo 240x308" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/240x308/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                                <div class="col-7 pl-3">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/384x308/f8f8f8/515151/?text=photo 384x308" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/384x308/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-3">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/640x220/f8f8f8/515151/?text=photo 640x220" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/640x220/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col pr-3">
+                            <div class="photo">
+                                <!-- <img src="https://via.placeholder.com/542x542/f8f8f8/515151/?text=photo 542x542" alt="product_photo" class=""> -->
+                                <img src="https://source.unsplash.com/542x542/?wood,furniture" alt="product_photo" class="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row h-100 no-gutters">
+                                <div class="col-5">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/240x308/f8f8f8/515151/?text=photo 240x308" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/240x308/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                                <div class="col-7 pl-3">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/384x308/f8f8f8/515151/?text=photo 384x308" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/384x308/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-3">
+                                    <div class="photo">
+                                        <!-- <img src="https://via.placeholder.com/640x220/f8f8f8/515151/?text=photo 640x220" alt="product_photo" class=""> -->
+                                        <img src="https://source.unsplash.com/640x220/?wood,furniture" alt="product_photo" class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,67 +304,11 @@
     <div id="footer">
         <div class="bg-gray">
             <div class="container">
-                <div class="footer-top">
-                    <div class="row">
-                        <div class="col-12 col-md-3">
-                            <div class="icon">
-                                <i class="fas fa-plane"></i>
-                            </div>
-                            <div class="info">
-                                <div class="title">
-                                    free shipping
-                                </div>
-                                <div class="subtitle">
-                                    Free shipping on all US order
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="icon">
-                                <i class="far fa-life-ring"></i>
-                            </div>
-                            <div class="info">
-                                <div class="title">
-                                    support 24/7
-                                </div>
-                                <div class="subtitle">
-                                    We support 24 hours a day
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="icon">
-                                <i class="fas fa-box-open"></i>
-                            </div>
-                            <div class="info">
-                                <div class="title">
-                                    gift cards
-                                </div>
-                                <div class="subtitle">
-                                    Give perfect gift
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <div class="icon">
-                                <i class="far fa-money-bill-alt"></i>
-                            </div>
-                            <div class="info">
-                                <div class="title">
-                                    payment 100% secure
-                                </div>
-                                <div class="subtitle">
-                                    Payment 100% secure
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="footer-bottom">
                     <div class="row">
                         <div class="first col-12 col-md-3">
                             <div class="logo">
-                                <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                                <img src="https://via.placeholder.com/114x31/7f7f7f/FFFFFF/?text=logo" alt="logo">
                             </div>
                             <p class="desc">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos!
@@ -234,9 +362,12 @@
                         </div>
                         <div class="fifth col-12 col-md-3 text-md-right mb-3">
                             <div class="title">sign up newsletter</div>
+                            <p class="desc">
+                                Subscript now to get 15% off on any product
+                            </p>
                             <div class="subscribe-box text-left">
                                 <input type="text" placeholder="Your email">
-                                <button type="button">subscribe</button>
+                                <i class="fas fa-angle-right"></i>
                             </div>
                             <div class="title">follow us</div>
                             <div class="social-media">
@@ -261,7 +392,7 @@
                         <div class="box">
                             <span>©</span>
                             <div class="logo">
-                                <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                                <img src="https://via.placeholder.com/114x31/7a7a7a/FFFFFF/?text=logo" alt="logo">
                             </div>
                             <span>-All right Reserved</span>
                         </div>
@@ -290,7 +421,42 @@
 
         $(document).ready(function(){
 
-           
+            $('.slick-items').slick({
+                centerMode: true,
+                centerPadding: '150px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '.angle-left',
+                nextArrow: '.angle-right',
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '35px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '25px',
+                            slidesToShow: 1
+                        }
+                    },
+                ]
+            });
+
+            $('.menu').click(function(){
+                $('.hambergerg-area').toggleClass('open');
+            });
+
         });
 
     </script>
