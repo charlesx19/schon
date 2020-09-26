@@ -1,4 +1,6 @@
 @import "about.less";
+@import "contact.less";
+
 
 @color_1: #a1a1a1;
 
@@ -58,8 +60,6 @@ ul {
     }
 }
 
-
-
 .switch-buttons {
     padding: 7px;
     width: 80px;
@@ -85,6 +85,55 @@ ul {
         line-height: 30px;
         color: #bebebe;
         cursor: pointer;
+    }
+}
+
+#content {
+    > div {
+        padding: 90px 0;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p.desc {
+        font-size: 12px;
+        line-height: 30px;
+        span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .header {
+        padding: 75px 0 60px 0;
+        background: #f4f4f4;
+        text-align: center;
+        .title {
+            margin-bottom: 1rem;
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #494949;
+            letter-spacing: 1px;
+        }
+        #breadcrumbs {
+            li {
+                font-size: 12px;
+                text-transform: capitalize;
+                color: #494949;
+                a {
+                    color: #494949;
+                }
+            }
+            .angle-right {
+                margin: 0 15px;
+            }
+        }
     }
 }
 
