@@ -2,94 +2,114 @@
     color: #494949;
 }
 
+.contact {
 
-
-#content {
-    > div {
-        padding: 90px 0;
-    }
-    div.header {
-        position: relative;
-        background-image: url(https://source.unsplash.com/1920x1080/?wood,furniture);
-        // background-image: url(https://host.easylife.tw/pics/201205/TheAvengers/avengers_wp5_1920x1080.jpg);
-        background-position: center;
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255,255,255,.7);
+    #content {
+        > div {
+            padding: 90px 0;
         }
-    }
-
-    .main-content {
-        .title {
-            font-weight: 500;
-            text-transform: inherit;
-        }
-        .small-title {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: capitalize;
-            color: #383838;
-        }
-        .desc {
-            line-height: 20px;
-        }
-    }
-    .question {
-        padding: 0 140px;
-        input,textarea {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 12px 20px;
-            border: 1px solid #c0c0c0;
-            border-radius: 26px;
-            font-size: 12px;
-            &:focus {
-                outline: none;
+        div.header {
+            position: relative;
+            background-image: url(https://source.unsplash.com/1920x1080/?wood,furniture);
+            // background-image: url(https://host.easylife.tw/pics/201205/TheAvengers/avengers_wp5_1920x1080.jpg);
+            background-position: center;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255,255,255,.7);
             }
         }
-        textarea {
-            border-radius: 15px;
-            resize: none;
-        }
-        button {
-            padding: 12px 20px;
-            font-size: 12px;
-            color: white;
-            border: none;
-            border-radius: 24px;
-            background: #383838;
-        }
-    }
-}
-
-#footer {
-    .footer-bottom {
-        .row {
-            i {
-                margin: 0;
-                margin-left: 10px;
+    
+        .main-content {
+            .title {
+                font-weight: 500;
+                text-transform: inherit;
+            }
+            .small-title {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: #383838;
+            }
+            .desc {
+                line-height: 20px;
             }
         }
-        .address, .phone, .mail {
-            justify-content: flex-end;
+        .question {
+            padding: 0 140px;
+            input,textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 12px 20px;
+                border: 1px solid #c0c0c0;
+                border-radius: 26px;
+                font-size: 12px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            textarea {
+                border-radius: 15px;
+                resize: none;
+            }
+            button {
+                padding: 12px 20px;
+                font-size: 12px;
+                color: white;
+                border: none;
+                border-radius: 24px;
+                background: #383838;
+            }
         }
-        a.address {
+    }
+    
+    #footer {
+        .footer-bottom {
             p {
-                margin: 0;
+                color: #a0a0a0;
+            }
+            i {
+                color: #a0a0a0;
+            }
+            .row {
+                i {
+                    margin: 0;
+                    margin-left: 10px;
+                }
+            }
+            .address, .phone, .mail {
+                justify-content: flex-end;
+            }
+            a.address {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        .copyright {
+            padding: 0 0 120px 0;
+            ul {
+                justify-content: center;
+                li {
+                    margin: 0;
+                    margin: 0 8px;
+                }
+            }
+            p {
+                color: #a0a0a0;
+            }
+            i {
+                color: #a0a0a0;
             }
         }
     }
-    div.copyright {
-        padding: 0 0 120px 0;
-        ul {
-            justify-content: center;
-        }
-    }
+    
+
 }
+
 
 @import "contactRWD.less";
