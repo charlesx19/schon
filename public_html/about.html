@@ -184,11 +184,17 @@
             </div>
         </div>
 
-        <div class="ourWorkspace carousel-area d-none d-md-block">
-            <div class="angle-left">
+        <div class="ourWorkspace carousel-area">
+            <div class="angle-left d-none d-md-block">
                 <i class="fas fa-angle-left"></i>
             </div>
-            <div class="angle-right">
+            <div class="angle-right d-none d-md-block">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="angle-left-mobile d-block d-md-none">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="angle-right-mobile d-block d-md-none">
                 <i class="fas fa-angle-right"></i>
             </div>
             <div class="container">
@@ -198,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slick-items">
+            <div class="slick-items d-none d-md-block">
                 <div class="container">
                     <div class="row no-gutters">
                         <div class="col pr-3">
@@ -292,6 +298,29 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-items-mobile d-block d-md-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://source.unsplash.com/1920x1080/?wood,room" alt="product_photo" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://source.unsplash.com/1920x1080/?wood" alt="product_photo" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://source.unsplash.com/1920x1080/?furniture" alt="product_photo" class="">
                         </div>
                     </div>
                 </div>
@@ -451,6 +480,17 @@
                         }
                     },
                 ]
+            });
+
+            $('.slick-items-mobile').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '.angle-left-mobile',
+                nextArrow: '.angle-right-mobile',
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                
             });
 
             $('.menu').click(function(){
