@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog postlist sidebar</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
+</head>
+<body class="blogPostlist">
+    
+    <div id="header">
+        <div class="container-fluid overflow-hidden">
+            <div id="nav">
+                <div class="row p-lg-5 py-3">
+                    <div class="col-md-12 col-lg-4 col-xl-3 left-area">
+                        <div class="logo">
+                            <img src="https://via.placeholder.com/228x62/000000/FFFFFF/?text=logo" alt="logo" class="">
+                        </div>
+                        <a href="tel:+1-555-333-22-11" class="d-none d-md-block">+1 (555) 333 22 11</a>
+                    </div>
+                    <div class="col-md-12 col-lg-8 col-xl-9 d-none d-md-flex right-area mt-sm-3 mt-lg-0">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">products</a></li>
+                            <li><a href="#">collections</a></li>
+                            <li><a href="#">pages</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                        <div class="shortcut-icon">
+                            <span><i class="fas fa-search"></i></span>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <div class="hambergerg">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-md-none pb-5">
+                    <div class="hambergerg-area text-center">
+                        <div class="menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="nav-items">
+                            <ul>
+                                <a href="#"><li>home</li></a>
+                                <a href="#"><li>product</li></a>
+                                <a href="#"><li>pages</li></a>
+                                <a href="#"><li>about</li></a>
+                                <a href="#"><li>blog</li></a>
+                                <a href="#"><li>contact</li></a>
+                                <a href="#"><li><i class="fas fa-search"></i></li></a>
+                                <a href="#" class="shopping-cart d-flex">
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h6>shopping cart</h6>
+                                        <p><span>3 </span>items $<span>74.00</span></p>
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title">blog list sidebar 2</h1>
+                        <div id="breadcrumbs">
+                            <ul class="justify-content-center">
+                                <li><a href="#">home</a></li>
+                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
+                                <li>blog</li>
+                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
+                                <li>category</li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            search
+                            <span>
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content pd-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="post-box">
+                                    <div class="photo">
+                                        <img src="https://source.unsplash.com/1280x768/?nature,mountain" alt="post_photo" class="">
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="title">idea for living rooms</div>
+                                        <div class="info">
+                                            <a href="#" class="time">
+                                                <i class="far fa-clock"></i>
+                                                20 April 2015
+                                            </a>
+                                            <a href="#" class="category">
+                                                <i class="fas fa-list"></i>
+                                                Design
+                                            </a>
+                                            <a href="#" class="comment">
+                                                <i class="fas fa-comment-dots"></i>
+                                                2 Comments
+                                            </a>
+                                        </div>
+                                        <p class="desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam eveniet esse iusto sequi corrupti placeat quae nulla. consectetur adipisicing elit.
+                                        </p>
+                                        <p class="readMore">
+                                            read more
+                                        </p>
+                                        <div class="post-date">
+                                            <div class="date-box">
+                                                <div class="date">25</div>
+                                                <div class="month">April</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="post-box">
+                                    <div class="photo">
+                                        <img src="https://source.unsplash.com/1280x768/?nature,sea" alt="post_photo" class="">
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="title">idea for living rooms</div>
+                                        <div class="info">
+                                            <a href="#" class="time">
+                                                <i class="far fa-clock"></i>
+                                                20 April 2015
+                                            </a>
+                                            <a href="#" class="category">
+                                                <i class="fas fa-list"></i>
+                                                Design
+                                            </a>
+                                            <a href="#" class="comment">
+                                                <i class="fas fa-comment-dots"></i>
+                                                2 Comments
+                                            </a>
+                                        </div>
+                                        <p class="desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam eveniet esse iusto sequi corrupti placeat quae nulla. consectetur adipisicing elit.
+                                        </p>
+                                        <p class="readMore">
+                                            read more
+                                        </p>
+                                        <div class="post-date">
+                                            <div class="date-box">
+                                                <div class="date">25</div>
+                                                <div class="month">April</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="post-box">
+                                    <div class="photo">
+                                        <img src="https://source.unsplash.com/1280x768/?nature,forest" alt="post_photo" class="">
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="title">idea for living rooms</div>
+                                        <div class="info">
+                                            <a href="#" class="time">
+                                                <i class="far fa-clock"></i>
+                                                20 April 2015
+                                            </a>
+                                            <a href="#" class="category">
+                                                <i class="fas fa-list"></i>
+                                                Design
+                                            </a>
+                                            <a href="#" class="comment">
+                                                <i class="fas fa-comment-dots"></i>
+                                                2 Comments
+                                            </a>
+                                        </div>
+                                        <p class="desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam eveniet esse iusto sequi corrupti placeat quae nulla. consectetur adipisicing elit.
+                                        </p>
+                                        <p class="readMore">
+                                            read more
+                                        </p>
+                                        <div class="post-date">
+                                            <div class="date-box">
+                                                <div class="date">25</div>
+                                                <div class="month">April</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 control-box">
+                                <a href="#" class="prev-button">
+                                    <i class="fas fa-angle-left"></i>
+                                    previous
+                                </a>
+                                <a href="#" class="next-button">
+                                    next
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block sidebar-area">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="categories-area mb-5">
+                                    <div class="title">categories</div>
+                                    <div class="categories-box">
+                                        <a href="#">design</a>
+                                        <a href="#">future</a>
+                                        <a href="#">kitchen</a>
+                                        <a href="#">photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="popularPost-area mb-5">
+                                    <div class="title">popular post</div>
+                                    <a href="#" class="popularPost-box">
+                                        <div class="info">
+                                            <p class="desc">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="date">
+                                                24.09.2015
+                                            </p>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                                        </div>
+                                    </a>
+                                    <a href="#" class="popularPost-box d-flex">
+                                        <div class="info">
+                                            <p class="desc">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="date">
+                                                24.09.2015
+                                            </p>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                                        </div>
+                                    </a>
+                                    <a href="#" class="popularPost-box d-flex">
+                                        <div class="info">
+                                            <p class="desc">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="date">
+                                                24.09.2015
+                                            </p>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                                        </div>
+                                    </a>
+                                    <a href="#" class="popularPost-box d-flex">
+                                        <div class="info">
+                                            <p class="desc">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="date">
+                                                24.09.2015
+                                            </p>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="tags-area">
+                                    <div class="title">tags</div>
+                                    <div class="tags-box">
+                                        <a href="#">fusce, </a>
+                                        <a href="#">mattis, </a>
+                                        <a href="#">nunc, </a>
+                                        <a href="#">lacus, </a>
+                                        <a href="#">vulputate, </a>
+                                        <a href="#">facilisis, </a>
+                                        <a href="#">dui, </a>
+                                        <a href="#">efficitur, </a>
+                                        <a href="#">ut </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="footer">
+        <div class="bg-gray w-80">
+            <div class="container">
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="second col-12 col-md-2">
+                            <div class="title">products</div>
+                            <ul>
+                                <li><a href="#">all</a></li>
+                                <li><a href="#">sochairsfas</a></li>
+                                <li><a href="#">sofas</a></li>
+                                <li><a href="#">living</a></li>
+                                <li><a href="#">bedroom</a></li>
+                                <li><a href="#">tables</a></li>
+                                <li><a href="#">new</a></li>
+                            </ul>
+                        </div>
+                        <div class="third col-12 col-md-2">
+                            <div class="title">costomer</div>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">support</a></li>
+                                <li><a href="#">repair center</a></li>
+                            </ul>
+                        </div>
+                        <div class="fourth col-12 col-md-2">
+                            <div class="title">pages</div>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">contact</a></li>
+                                <li><a href="#">product</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">terms</a></li>
+                            </ul>
+                        </div>
+                        <div class="fourth col-12 col-md-2">
+                            <div class="title">socials</div>
+                            <ul>
+                                <li><a href="#">twitter</a></li>
+                                <li><a href="#">facebook</a></li>
+                                <li><a href="#">google+</a></li>
+                                <li><a href="#">pinterest</a></li>
+                            </ul>
+                        </div>
+                        <div class="first col-12 col-md-3 text-left text-md-right">
+                            <div class="logo mb-5">
+                                <img src="https://via.placeholder.com/114x31/7f7f7f/FFFFFF/?text=logo" alt="logo">
+                            </div>
+                            <a href="#" class="address">
+                                <p>Suite 18B,148 Connaugt Road Central<br>New Yankee</p>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                            <div class="contact-info mt-2">
+                                <a href="tel:+1-555-333-22-11" class="phone">
+                                    <p>+1 (555) 333 22 11</p>
+                                    <i class="fas fa-phone-alt"></i>
+                                </a>
+                                <a href="mailto:info@schon.chair" class="mail">
+                                    <p>info@schon.chair</p>
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+                            <li><a href="#"><i class="fab fa-amazon"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="box">
+                            <span>Copyright Schön. All right reserved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar-switch" class="d-flex d-md-none">
+        <div class="circle">
+            <i class="fas fa-angle-double-left"></i>
+        </div>
+    </div>
+    <div class="container sidebar-area sidebar-full">
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="categories-area mb-5">
+                    <div class="title">categories</div>
+                    <div class="categories-box">
+                        <a href="#">design</a>
+                        <a href="#">future</a>
+                        <a href="#">kitchen</a>
+                        <a href="#">photography</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="popularPost-area mb-5">
+                    <div class="title">popular post</div>
+                    <a href="#" class="popularPost-box">
+                        <div class="info">
+                            <p class="desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="date">
+                                24.09.2015
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                        </div>
+                    </a>
+                    <a href="#" class="popularPost-box d-flex">
+                        <div class="info">
+                            <p class="desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="date">
+                                24.09.2015
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                        </div>
+                    </a>
+                    <a href="#" class="popularPost-box d-flex">
+                        <div class="info">
+                            <p class="desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="date">
+                                24.09.2015
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                        </div>
+                    </a>
+                    <a href="#" class="popularPost-box d-flex">
+                        <div class="info">
+                            <p class="desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="date">
+                                24.09.2015
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="tags-area">
+                    <div class="title">tags</div>
+                    <div class="tags-box">
+                        <a href="#">fusce, </a>
+                        <a href="#">mattis, </a>
+                        <a href="#">nunc, </a>
+                        <a href="#">lacus, </a>
+                        <a href="#">vulputate, </a>
+                        <a href="#">facilisis, </a>
+                        <a href="#">dui, </a>
+                        <a href="#">efficitur, </a>
+                        <a href="#">ut </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('.slick-items').slick({
+                centerMode: true,
+                centerPadding: '150px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '.angle-left',
+                nextArrow: '.angle-right',
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '35px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '25px',
+                            slidesToShow: 1
+                        }
+                    },
+                ]
+            });
+
+            $('.menu').click(function(){
+                $('.hambergerg-area').toggleClass('open');
+            });
+
+            $('#sidebar-switch').click(function(){
+                $('#sidebar-switch').css('transform', 'translate(-260px, -50%)');
+                $('.sidebar-full').css('transform', 'translateX(0px)');
+            });
+
+            $('.close').click(function(){
+                $('#sidebar-switch').css('transform', 'translate(40px, -50%)');
+                $('.sidebar-full').css('transform', 'translateX(340px)');
+            });
+
+        });
+
+    </script>
+</body>
+</html>
