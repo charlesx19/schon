@@ -1,0 +1,191 @@
+* {
+    color: #494949;
+}
+
+.blogDetail {
+    
+    #content {
+       
+        .header-bottom {
+            padding: 12px 0;
+            background: #eee;
+            i {
+                margin-left: 14px;
+            }
+            #breadcrumbs {
+                ul {
+                    line-height: 24px;
+                    i {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .search, .categories {
+                text-transform: capitalize;
+            }
+            .categories {
+                margin-left: 28px;
+            }
+        }
+
+        .main-content {
+            .container {
+                position: relative;
+                .main-photo {
+                    height: 570px;
+                    background-image: url(https://source.unsplash.com/1200x570/?nature,snow);
+                    background-size: cover;
+                    .post-date {
+                        left: 75px;
+                        top: 38px;
+                        background: #fff;
+                        .date, .month {
+                            color: #494949;
+                        }
+                    }
+                }
+            }
+            .content {
+                padding: 45px 45px 0 45px;
+                transform: translateY(-165px);
+                .post-info {
+                    padding: 45px;
+                    background: #fff;
+                }
+                .desc-photo {
+                    padding: 30px 45px 120px 45px;
+                }
+            }
+            .author, .comments, .leaveComment {
+                width: 900px;
+                margin: auto;
+                margin-bottom: 120px;
+                .title {
+                    position: relative;
+                    margin-bottom: 30px;
+                    margin-right: auto;
+                    width: fit-content;
+                    font-size: 20px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                        left: 0;
+                        top: 15px;
+                        border-bottom: 5px solid #494949;
+                    }
+                }
+            }
+            .author {
+                .box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 40px;
+                    margin: auto;
+                    background: #f4f4f4;
+                    .photo {
+                        width: 146px;
+                        height: 146px;
+                        flex-shrink: 0;
+                    }
+                    .info {
+                        margin-left: 38px;
+                        .author-title {
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            font-weight: 600;
+                        }
+                        .desc {
+                            margin: 1rem 0;
+                            line-height: 1.5rem;
+                            color: #898989;
+                        }
+                        .social-media {
+                            li {
+                                margin-right: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .comments {
+                .comment-info {
+                    padding-left: 17px;
+                    .comment {
+                        display: flex;
+                        margin: 45px 0;
+                        .photo {
+                            width: 65px;
+                            height: 65px;
+                            margin: 0 17px 0 0;
+                            flex-shrink: 0;
+                        }
+                        .small-title {
+                            margin-bottom: 5px;
+                            font-size: 12px;
+                            font-weight: 700;
+                            text-transform: capitalize;
+                        }
+                        .date {
+                            font-size: 12px;
+                            font-style: italic;
+                            transform: scale(0.8);
+                            transform-origin: left;
+                        }
+                        .desc {
+                            margin: 1rem 0 0 0;
+                            line-height: 1.5rem;
+                            color: #898989;
+                        }
+                        .horizon {
+                            width: 90%;
+                            margin-top: 45px;
+                            border-top: 1px solid #eee;
+                        }
+                    }
+                }
+            }
+            .leaveComment {
+                .title {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                        left: 0;
+                        top: 15px;
+                        border-bottom: 0px solid transparent;
+                    }
+                }
+                input,textarea {
+                    width: 100%;
+                    padding: 19px 25px;
+                    margin-bottom: 20px;
+                    border: none;
+                    background: #f7f7f7;
+                    resize: none;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    width: fit-content;
+                    padding: 19px 25px;
+                    border: none;
+                    background: #f7f7f7;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+@import "blogPostlistRWD.less";
+
+

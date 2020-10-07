@@ -1,6 +1,7 @@
 @import "about.less";
 @import "contact.less";
 @import "blogPostlist.less";
+@import "blogDetail.less";
 
 
 @color_1: #a1a1a1;
@@ -89,6 +90,20 @@ ul {
     }
 }
 
+#breadcrumbs {
+    li {
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #494949;
+        a {
+            color: #494949;
+        }
+    }
+    .angle-right {
+        margin: 0 15px;
+    }
+}
+
 #content {
     > div {
         padding: 90px 0;
@@ -121,19 +136,6 @@ ul {
             text-transform: uppercase;
             color: #494949;
             letter-spacing: 1px;
-        }
-        #breadcrumbs {
-            li {
-                font-size: 12px;
-                text-transform: capitalize;
-                color: #494949;
-                a {
-                    color: #494949;
-                }
-            }
-            .angle-right {
-                margin: 0 15px;
-            }
         }
     }
 }

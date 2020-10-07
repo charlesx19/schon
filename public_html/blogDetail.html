@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog postlist sidebar</title>
+    <title>blog detial</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -16,7 +16,7 @@
 
     <script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
 </head>
-<body class="blog blogPostlist">
+<body class="blog blogDetail">
     
     <div id="header">
         <div class="container-fluid overflow-hidden">
@@ -84,20 +84,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="title">blog list sidebar 2</h1>
+                        <h1 class="title">blog detail full width</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
                         <div id="breadcrumbs">
-                            <ul class="justify-content-center">
+                            <ul class="">
                                 <li><a href="#">home</a></li>
                                 <li class="angle-right"><i class="fas fa-angle-right"></i></li>
                                 <li>blog</li>
-                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
-                                <li>category</li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col">
+                        <div class="cube">
+                            <i class="fas fa-th"></i>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
                         <div class="search">
                             search
                             <span>
                                 <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                        <div class="categories">
+                            categories
+                            <span>
+                                <i class="fas fa-bars"></i>
                             </span>
                         </div>
                     </div>
@@ -107,216 +126,163 @@
 
         <div class="main-content pd-0">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-7">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="post-box">
+                <div class="main-photo">
+                    <div class="post-date">
+                        <div class="date-box">
+                            <div class="date">25</div>
+                            <div class="month">April</div>
+                        </div>
+                    </div>
+                    <div class="post-social-info">
+                        <div class="info">
+                            <a href="#" class="comment">
+                                <i class="fas fa-comment-dots"></i>
+                                12
+                            </a>
+                            <a href="#" class="share">
+                                <i class="fas fa-share-alt"></i>
+                                14
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="post-info">
+                        <div class="title">idea for living rooms</div>
+                        <div class="info">
+                            <a href="#" class="time">
+                                <i class="far fa-clock"></i>
+                                20 April 2015
+                            </a>
+                            <a href="#" class="category">
+                                <i class="fas fa-list"></i>
+                                Design
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fas fa-comment-dots"></i>
+                                2 Comments
+                            </a>
+                        </div>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odio consequatur non, eius eaque debitis qui at ex nihil! Voluptatum porro veniam corporis perspiciatis cumque officiis labore doloribus minus! Et mollitia, accusamus, ipsam consequuntur hic nihil dignissimos dolor, error veniam distinctio a. Consequuntur voluptas rem ipsum exercitationem! <br><br>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dignissimos itaque veritatis cum? Libero, veritatis sapiente adipisci ea repudiandae nisi ratione commodi quod eos beatae cum temporibus error officiis dolorum quis a hic praesentium ipsa autem! Hic modi unde placeat ab quis rerum, earum voluptatem sit iusto natus cupiditate ipsum quam nihil ad, quibusdam optio beatae voluptatum doloremque inventore excepturi quos? <br>
+                        </p>
+                        <div class="w-100 pt-5"></div>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, earum numquam animi saepe, rerum ullam ipsa ducimus, soluta reiciendis magnam dignissimos fugiat autem. Voluptatum cumque, voluptate iure totam consequatur nulla.<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi inventore quasi iste ipsum, officia magni assumenda. Autem commodi voluptatem, voluptate velit itaque magni asperiores quo nobis, inventore quaerat a.<br>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, praesentium vitae incidunt quaerat unde commodi nobis officia et reiciendis excepturi assumenda! Voluptas reiciendis tempora architecto aspernatur sit possimus, odio neque.
+                        </p>
+                        <div class="desc-photo">
+                            <div class="row">
+                                <div class="col">
                                     <div class="photo">
-                                        <img src="https://source.unsplash.com/1280x768/?nature,mountain" alt="post_photo" class="">
+                                        <img src="https://via.placeholder.com/260x260/000000/FFFFFF/?text=photo" alt="logo" class="">
                                     </div>
-                                    <div class="post-info">
-                                        <div class="title">idea for living rooms</div>
-                                        <div class="info">
-                                            <a href="#" class="time">
-                                                <i class="far fa-clock"></i>
-                                                20 April 2015
-                                            </a>
-                                            <a href="#" class="category">
-                                                <i class="fas fa-list"></i>
-                                                Design
-                                            </a>
-                                            <a href="#" class="comment">
-                                                <i class="fas fa-comment-dots"></i>
-                                                2 Comments
-                                            </a>
-                                        </div>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam eveniet esse iusto sequi corrupti placeat quae nulla. consectetur adipisicing elit.
-                                        </p>
-                                        <p class="readMore">
-                                            read more
-                                        </p>
-                                        <div class="post-date">
-                                            <div class="date-box">
-                                                <div class="date">25</div>
-                                                <div class="month">April</div>
-                                            </div>
-                                        </div>
+                                    <div class="photo mt-5">
+                                        <img src="https://via.placeholder.com/260x175/000000/FFFFFF/?text=photo" alt="logo" class="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="photo">
+                                        <img src="https://via.placeholder.com/260x200/000000/FFFFFF/?text=photo" alt="logo" class="">
+                                    </div>
+                                    <div class="photo mt-5">
+                                        <img src="https://via.placeholder.com/260x190/000000/FFFFFF/?text=photo" alt="logo" class="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="photo">
+                                        <img src="https://via.placeholder.com/260x350/000000/FFFFFF/?text=photo" alt="logo" class="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="post-box">
-                                    <div class="photo">
-                                        <img src="https://source.unsplash.com/1280x768/?nature,sea" alt="post_photo" class="">
-                                    </div>
-                                    <div class="post-info">
-                                        <div class="title">idea for living rooms</div>
-                                        <div class="info">
-                                            <a href="#" class="time">
-                                                <i class="far fa-clock"></i>
-                                                20 April 2015
-                                            </a>
-                                            <a href="#" class="category">
-                                                <i class="fas fa-list"></i>
-                                                Design
-                                            </a>
-                                            <a href="#" class="comment">
-                                                <i class="fas fa-comment-dots"></i>
-                                                2 Comments
-                                            </a>
-                                        </div>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam eveniet esse iusto sequi corrupti placeat quae nulla. consectetur adipisicing elit.
-                                        </p>
-                                        <p class="readMore">
-                                            read more
-                                        </p>
-                                        <div class="post-date">
-                                            <div class="date-box">
-                                                <div class="date">25</div>
-                                                <div class="month">April</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="post-box">
-                                    <div class="photo">
-                                        <img src="https://source.unsplash.com/1280x768/?nature,forest" alt="post_photo" class="">
-                                    </div>
-                                    <div class="post-info">
-                                        <div class="title">idea for living rooms</div>
-                                        <div class="info">
-                                            <a href="#" class="time">
-                                                <i class="far fa-clock"></i>
-                                                20 April 2015
-                                            </a>
-                                            <a href="#" class="category">
-                                                <i class="fas fa-list"></i>
-                                                Design
-                                            </a>
-                                            <a href="#" class="comment">
-                                                <i class="fas fa-comment-dots"></i>
-                                                2 Comments
-                                            </a>
-                                        </div>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam eveniet esse iusto sequi corrupti placeat quae nulla. consectetur adipisicing elit.
-                                        </p>
-                                        <p class="readMore">
-                                            read more
-                                        </p>
-                                        <div class="post-date">
-                                            <div class="date-box">
-                                                <div class="date">25</div>
-                                                <div class="month">April</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 control-box">
-                                <a href="#" class="prev-button">
-                                    <i class="fas fa-angle-left"></i>
-                                    previous
-                                </a>
-                                <a href="#" class="next-button">
-                                    next
-                                    <i class="fas fa-angle-right"></i>
-                                </a>
+                        </div>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in error vitae quod maiores consequuntur asperiores nulla ipsum doloremque! Impedit aliquid autem animi neque optio, expedita, consectetur velit exercitationem sed iusto sequi accusamus, officia veniam.<br><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam illo soluta aspernatur fugiat, quis consequatur tenetur nihil beatae voluptas sapiente repellendus quas nobis, odio iure nulla, assumenda reprehenderit ab corrupti animi at quisquam non?
+                        </p>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="box">
+                        <div class="photo">
+                            <img src="https://source.unsplash.com/146x146/?woman,face" alt="author" class="">
+                        </div>
+                        <div class="info">
+                            <div class="author-title">clara wooden</div>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat ipsa deleniti, sint magnam ipsum ducimus eveniet veniam, necessitatibus mollitia ipsam dolor. Maxime quasi molestiae alias labore, voluptatibus voluptates qui quae aliquam odit ullam exercitationem sint facilis distinctio at perferendis!
+                            </p>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 d-none d-md-block sidebar-area">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="categories-area mb-5">
-                                    <div class="title">categories</div>
-                                    <div class="categories-box">
-                                        <a href="#">design</a>
-                                        <a href="#">future</a>
-                                        <a href="#">kitchen</a>
-                                        <a href="#">photography</a>
+                </div>
+                <div class="comments">
+                    <div class="box">
+                        <h2 class="title">comments</h2>
+                        <div class="comment-info">
+                            <div class="comment pt-3">
+                                <div class="photo">
+                                     <img src="https://via.placeholder.com/65x65/f8f8f8/222222/?text=member 65x65" alt="member" class=""> 
+                                </div>
+                                <div class="info">
+                                    <div class="small-title">john wick</div>
+                                    <div class="date">May 24,2015</div>
+                                    <p class="desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias itaque aliquid, nisi quaerat minima unde soluta iusto dicta quisquam asperiores sequi, aliquam maxime. Quidem autem beatae quae quo nobis distinctio ipsum, optio itaque perspiciatis eaque, magni quia. Magni numquam, sapiente et illum sequi voluptatem minus.
+                                    </p>
+                                    <div class="horizon"></div>
+                                    <div class="comment">
+                                        <div class="photo">
+                                             <img src="https://via.placeholder.com/65x65/f8f8f8/222222/?text=member 65x65" alt="member" class=""> 
+                                        </div>
+                                        <div class="info">
+                                            <div class="small-title">john wick</div>
+                                            <div class="date">May 24,2015</div>
+                                            <p class="desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias itaque aliquid, nisi quaerat minima unde soluta iusto dicta quisquam asperiores sequi, aliquam maxime. Quidem autem beatae quae quo nobis distinctio ipsum, optio itaque perspiciatis eaque, magni quia. Magni numquam, sapiente et illum sequi voluptatem minus.
+                                            </p>
+                                            <div class="horizon"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="popularPost-area mb-5">
-                                    <div class="title">popular post</div>
-                                    <a href="#" class="popularPost-box">
-                                        <div class="info">
-                                            <p class="desc">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            </p>
-                                            <p class="date">
-                                                24.09.2015
-                                            </p>
-                                        </div>
-                                        <div class="thumbnail">
-                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                                        </div>
-                                    </a>
-                                    <a href="#" class="popularPost-box d-flex">
-                                        <div class="info">
-                                            <p class="desc">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            </p>
-                                            <p class="date">
-                                                24.09.2015
-                                            </p>
-                                        </div>
-                                        <div class="thumbnail">
-                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                                        </div>
-                                    </a>
-                                    <a href="#" class="popularPost-box d-flex">
-                                        <div class="info">
-                                            <p class="desc">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            </p>
-                                            <p class="date">
-                                                24.09.2015
-                                            </p>
-                                        </div>
-                                        <div class="thumbnail">
-                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                                        </div>
-                                    </a>
-                                    <a href="#" class="popularPost-box d-flex">
-                                        <div class="info">
-                                            <p class="desc">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            </p>
-                                            <p class="date">
-                                                24.09.2015
-                                            </p>
-                                        </div>
-                                        <div class="thumbnail">
-                                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="tags-area">
-                                    <div class="title">tags</div>
-                                    <div class="tags-box">
-                                        <a href="#">fusce, </a>
-                                        <a href="#">mattis, </a>
-                                        <a href="#">nunc, </a>
-                                        <a href="#">lacus, </a>
-                                        <a href="#">vulputate, </a>
-                                        <a href="#">facilisis, </a>
-                                        <a href="#">dui, </a>
-                                        <a href="#">efficitur, </a>
-                                        <a href="#">ut </a>
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
+                    </div>
+                </div>
+                <div class="leaveComment">
+                    <div class="box">
+                        <div class="title">leave a comment</div>
+                        <form action="#" method="POST" class="comment-form">
+                            <div class="row">
+                                <div class="col-4">
+                                    <input type="text" id="name" placeholder="Name" required>
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" id="email" placeholder="E-mail" required>
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" id="website" placeholder="Website">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Leave comment Here" rows="4" editable="false"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="button" type="submit">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -415,7 +381,7 @@
         </div>
     </div>
 
-    <div id="sidebar-switch" class="d-flex d-md-none">
+    <!-- <div id="sidebar-switch" class="d-flex d-md-none">
         <div class="circle">
             <i class="fas fa-angle-double-left"></i>
         </div>
@@ -510,7 +476,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
