@@ -5,29 +5,6 @@
 .blogDetail {
     
     #content {
-       
-        .header-bottom {
-            padding: 12px 0;
-            background: #eee;
-            i {
-                margin-left: 14px;
-            }
-            #breadcrumbs {
-                ul {
-                    line-height: 24px;
-                    i {
-                        margin-left: 0;
-                    }
-                }
-            }
-            .search, .categories {
-                text-transform: capitalize;
-            }
-            .categories {
-                margin-left: 28px;
-            }
-        }
-
         .main-content {
             .container {
                 position: relative;
@@ -57,7 +34,7 @@
                 }
             }
             .author, .comments, .leaveComment {
-                width: 900px;
+                width: 75%;
                 margin: auto;
                 margin-bottom: 120px;
                 .title {
@@ -92,6 +69,7 @@
                     }
                     .info {
                         margin-left: 38px;
+                        flex-shrink: 1;
                         .author-title {
                             font-size: 14px;
                             text-transform: capitalize;
@@ -185,7 +163,8 @@
 }
 
 
+@import "blogDetailRWD.less";
 
-@import "blogPostlistRWD.less";
+
 
 
