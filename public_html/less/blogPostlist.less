@@ -98,6 +98,7 @@
         padding: 40px 75px 0 115px;
         .title {
             font-size: 22px;
+            color: #494949;
         }
         .info {
             margin-top: 20px;
@@ -121,7 +122,7 @@
             font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
-            cursor: pointer;
+            color: #494949;
         }
     }
 
@@ -304,6 +305,22 @@
         }
     }
 
+    #darker-filter {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0);
+        z-index: -10;
+        transition: all .3s ease-in;
+        &.open {
+            z-index: 80;
+            background: rgba(255,255,255,0.8);
+        }
+    }
+
     #sidebar-switch {
         position: fixed;
         display: flex;
@@ -315,12 +332,16 @@
         height: 80px;
         border-radius: 50%;
         background: #494949;
+        z-index: 100;
         transform: translate(40px, -50%);
         transition: .3s all ease-in-out;
         cursor: pointer;
         i {
             margin-left: 15px;
             color: #f4f4f4;
+        }
+        &.open {
+            transform: translate(-260px, -50%);
         }
     }
     .sidebar-full {
@@ -332,8 +353,12 @@
         background: #919191;
         border-left: 5px solid #494949;
         overflow: scroll;
+        z-index: 100;
         transform: translateX(340px);
         transition: all .3s ease-in-out;
+        &.open {
+            transform: translateX(0px);
+        }
         &.sidebar-area {
             padding: 50px 30px 50px 50px;
             text-align: right;

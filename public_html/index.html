@@ -48,12 +48,12 @@
                 </div>
                 <div class="nav-items">
                     <ul>
-                        <a href="#"><li>home</li></a>
-                        <a href="#"><li>product</li></a>
+                        <a href="index.html"><li>home</li></a>
+                        <a href="productList.html"><li>product</li></a>
                         <a href="#"><li>pages</li></a>
-                        <a href="#"><li>about</li></a>
-                        <a href="#"><li>blog</li></a>
-                        <a href="#"><li>contact</li></a>
+                        <a href="about.html"><li>about</li></a>
+                        <a href="blogPostlist.html"><li>blog</li></a>
+                        <a href="contact.html"><li>contact</li></a>
                         <a href="#"><li><i class="fas fa-search"></i></li></a>
                         <a href="#" class="shopping-cart d-flex">
                             <div class="icon">
@@ -80,12 +80,12 @@
                     <div class="col-6">
                         <div id="nav">
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">products</a></li>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="porductList.html">products</a></li>
                                 <li><a href="#">pages</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="blogPostlist.html">blog</a></li>
+                                <li><a href="contact.html">contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -986,34 +986,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript">
+   <script src="js/main.js"></script>
+   <script src="js/index.js"></script>
 
-        $(document).ready(function(){
-
-            $('.carousel-featured').slick({
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                prevArrow: '.featured-button-left',
-                nextArrow: '.featured-button-right'
-            });
-            $('.bestSeller-items').slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                prevArrow: '.bestSeller-button-left',
-                nextArrow: '.bestSeller-button-right'
-            });
-            $('.brands-box').slick({
-                slidesToShow: 6,
-                slidesToScroll: 6,
-                prevArrow: '.switch-left',
-                nextArrow: '.switch-right'
-            });
-
-            $('.menu').click(function(){
-                $('.hambergerg-area').toggleClass('open');
-            });
-        });
-
-    </script>
 </body>
 </html>

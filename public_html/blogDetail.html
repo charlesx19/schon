@@ -30,12 +30,12 @@
                     </div>
                     <div class="col-md-12 col-lg-8 col-xl-9 d-none d-md-flex right-area mt-sm-3 mt-lg-0">
                         <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">products</a></li>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="productList.html">products</a></li>
                             <li><a href="#">collections</a></li>
                             <li><a href="#">pages</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
                         </ul>
                         <div class="shortcut-icon">
                             <span><i class="fas fa-search"></i></span>
@@ -54,12 +54,12 @@
                         </div>
                         <div class="nav-items">
                             <ul>
-                                <a href="#"><li>home</li></a>
-                                <a href="#"><li>product</li></a>
+                                <a href="index.html"><li>home</li></a>
+                                <a href="productList.html"><li>products</li></a>
+                                <a href="#"><li>collections</li></a>
                                 <a href="#"><li>pages</li></a>
-                                <a href="#"><li>about</li></a>
-                                <a href="#"><li>blog</li></a>
-                                <a href="#"><li>contact</li></a>
+                                <a href="about.html"><li>about</li></a>
+                                <a href="contact.html"><li>contact</li></a>
                                 <a href="#"><li><i class="fas fa-search"></i></li></a>
                                 <a href="#" class="shopping-cart d-flex">
                                     <div class="icon">
@@ -485,58 +485,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript">
+    <script src="js/main.js"></script>
 
-        $(document).ready(function(){
-
-            $('.slick-items').slick({
-                centerMode: true,
-                centerPadding: '150px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                prevArrow: '.angle-left',
-                nextArrow: '.angle-right',
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                responsive: [
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '35px',
-                            slidesToShow: 1
-                        }
-                    },
-                    {
-                        breakpoint: 769,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '25px',
-                            slidesToShow: 1
-                        }
-                    },
-                ]
-            });
-
-            $('.menu').click(function(){
-                $('.hambergerg-area').toggleClass('open');
-            });
-
-            $('#sidebar-switch').click(function(){
-                $('#sidebar-switch').css('transform', 'translate(-260px, -50%)');
-                $('.sidebar-full').css('transform', 'translateX(0px)');
-            });
-
-            $('.close').click(function(){
-                $('#sidebar-switch').css('transform', 'translate(40px, -50%)');
-                $('.sidebar-full').css('transform', 'translateX(340px)');
-            });
-
-        });
-
-    </script>
 </body>
 </html>

@@ -30,12 +30,12 @@
                     </div>
                     <div class="col-md-12 col-lg-8 col-xl-9 d-none d-md-flex right-area mt-sm-3 mt-lg-0">
                         <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">products</a></li>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="productList.html">products</a></li>
                             <li><a href="#">collections</a></li>
                             <li><a href="#">pages</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
                         </ul>
                         <div class="shortcut-icon">
                             <span><i class="fas fa-search"></i></span>
@@ -54,12 +54,12 @@
                         </div>
                         <div class="nav-items">
                             <ul>
-                                <a href="#"><li>home</li></a>
-                                <a href="#"><li>product</li></a>
+                                <a href="index.html"><li>home</li></a>
+                                <a href="productList.html"><li>products</li></a>
+                                <a href="#"><li>collections</li></a>
                                 <a href="#"><li>pages</li></a>
-                                <a href="#"><li>about</li></a>
-                                <a href="#"><li>blog</li></a>
-                                <a href="#"><li>contact</li></a>
+                                <a href="about.html"><li>about</li></a>
+                                <a href="contact.html"><li>contact</li></a>
                                 <a href="#"><li><i class="fas fa-search"></i></li></a>
                                 <a href="#" class="shopping-cart d-flex">
                                     <div class="icon">
@@ -550,35 +550,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-    <script type="text/javascript">
+   <script src="js/main.js"></script>
+   <script src="js/blogMasonry.js"></script>
 
-        $(document).ready(function(){
-
-            
-
-            $('.menu').click(function(){
-                $('.hambergerg-area').toggleClass('open');
-            });
-
-            $('#sidebar-switch').click(function(){
-                $('#sidebar-switch').css('transform', 'translate(-260px, -50%)');
-                $('.sidebar-full').css('transform', 'translateX(0px)');
-            });
-
-            $('.close').click(function(){
-                $('#sidebar-switch').css('transform', 'translate(40px, -50%)');
-                $('.sidebar-full').css('transform', 'translateX(340px)');
-            });
-
-
-            $('.masonry-box').masonry({
-
-                itemSelector: '.item',
-                // columnWidth: 370,
-            });
-
-        });
-
-    </script>
 </body>
 </html>
