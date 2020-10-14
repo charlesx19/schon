@@ -30,12 +30,12 @@
                     </div>
                     <div class="col-md-12 col-lg-8 d-none d-md-flex right-area mt-sm-3 mt-lg-0">
                         <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">product</a></li>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="productList.html">products</a></li>
                             <li><a href="#">pages</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="blogPostlist.html">blog</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
                         </ul>
                         <div class="shortcut-icon">
                             <span><i class="fas fa-search"></i></span>
@@ -51,12 +51,12 @@
                         </div>
                         <div class="nav-items">
                             <ul>
-                                <a href="#"><li>home</li></a>
-                                <a href="#"><li>product</li></a>
+                                <a href="index.html"><li>home</li></a>
+                                <a href="productList.html"><li>products</li></a>
                                 <a href="#"><li>pages</li></a>
-                                <a href="#"><li>about</li></a>
-                                <a href="#"><li>blog</li></a>
-                                <a href="#"><li>contact</li></a>
+                                <a href="about.html"><li>about</li></a>
+                                <a href="blogPostlist.html"><li>blog</li></a>
+                                <a href="contact.html"><li>contact</li></a>
                                 <a href="#"><li><i class="fas fa-search"></i></li></a>
                                 <a href="#" class="shopping-cart d-flex">
                                     <div class="icon">
@@ -77,15 +77,74 @@
 
     <div id="content">
 
-        <div class="product-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        slick
+        <div class="product-banner bg-gray pb-0">
+            <div class="container position-relative">
+                <div class="post-social-info">
+                    <div class="info">
+                        <a href="#" class="like">
+                            <i class="fas fa-heart"></i>
+                            27
+                        </a>
+                        <a href="#" class="comment">
+                            <i class="fas fa-comment-dots"></i>
+                            12
+                        </a>
+                        <a href="#" class="share">
+                            <i class="fas fa-share-alt"></i>
+                            14
+                        </a>
                     </div>
-                    <div class="col-6">
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-6 col-md-7 slick-box">
+                        <div class="row">
+                            <div class="col-12 slider-for">
+                                <div class="photo">
+                                    <img src="https://via.placeholder.com/510x450/ffffff/4c4c4c/?text=No.1" alt="photo" class="">
+                                </div>
+                                <div class="photo">
+                                    <img src="https://via.placeholder.com/510x450/ffffff/4c4c4c/?text=No.2" alt="photo" class="">
+                                </div>
+                                <div class="photo">
+                                    <img src="https://via.placeholder.com/510x450/ffffff/4c4c4c/?text=No.3" alt="photo" class="">
+                                </div>
+                                <div class="photo">
+                                    <img src="https://via.placeholder.com/510x450/ffffff/4c4c4c/?text=No.4" alt="photo" class="">
+                                </div>
+                                <div class="photo">
+                                    <img src="https://via.placeholder.com/510x450/ffffff/4c4c4c/?text=No.5" alt="photo" class="">
+                                </div>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <button class="prev">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                <button class="next">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                                <div class="slider-nav">
+                                    <div class="thumbnail">
+                                        <img src="https://via.placeholder.com/105x105/ffffff/4c4c4c/?text=No.1" alt="thumbnail" class="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="https://via.placeholder.com/105x105/ffffff/4c4c4c/?text=No.2" alt="thumbnail" class="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="https://via.placeholder.com/105x105/ffffff/4c4c4c/?text=No.3" alt="thumbnail" class="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="https://via.placeholder.com/105x105/ffffff/4c4c4c/?text=No.4" alt="thumbnail" class="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="https://via.placeholder.com/105x105/ffffff/4c4c4c/?text=No.5" alt="thumbnail" class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 col-md-5 product-detail pb-5">
                         <div id="breadcrumbs">
-                            <ul class="justify-content-center">
+                            <ul class="">
                                 <li><a href="#">chairs</a></li>
                                 <li class="angle-right"><i class="fas fa-angle-right"></i></li>
                                 <li>products</li>
@@ -101,38 +160,44 @@
                             <i class="far fa-star"></i>
                             <span>Reviews(12)</span>
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <span>
-                                <i class="fas fa-share-alt"></i>
-                            </span>
-                            <div class="share d-none d-sm-block">
-                                share
-                            </div>
+                        <div class="d-flex social-icons">
+                            <a href="#" class="d-flex">
+                                <span>
+                                    <i class="fas fa-share-alt"></i>
+                                </span>
+                                <div class="share d-none d-sm-block">
+                                    share
+                                </div>
+                            </a>
 
-                            <span>
-                                <i class="fas fa-exchange-alt"></i>
-                            </span>
-                            <div class="compare d-none d-sm-block">
-                                compare
-                            </div>
+                            <a href="#" class="d-flex">
+                                <span>
+                                    <i class="fas fa-exchange-alt"></i>
+                                </span>
+                                <div class="compare d-none d-sm-block">
+                                    compare
+                                </div>
+                            </a>
                             
-                            <span>
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <div class="addToWish d-none d-sm-block">
-                                add to wish
-                            </div>   
+                            <a href="#" class="d-flex">
+                                <span>
+                                    <i class="fas fa-heart"></i>
+                                </span>
+                                <div class="addToWish d-none d-sm-block">
+                                    add to wish
+                                </div>   
+                            </a>
                         </div>
                         <div class="desc-box">
                             <p class="desc">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officia, quisquam voluptatem nulla ipsum quod impedit laborum quos quasi harum ipsa accusamus incidunt reiciendis! Ratione!<br><br>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti culpa rerum, aliquam dolore ex amet unde velit quod aspernatur veniam numquam libero totam odit pariatur, ab quisquam mollitia asperiores facilis sint consectetur, saepe qui quae ipsa blanditiis. Similique, incidunt soluta.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident officiis ipsam voluptate quidem magnam! Nobis at, molestias dolores ullam dolorem quod exercitationem magni excepturi et placeat nostrum perferendis ex corporis voluptates, quidem omnis molestiae quis debitis quas eligendi quae! Cum voluptatum ipsum, id officiis est temporibus porro molestias voluptatibus placeat!
                             </p>
                         </div>
                         <div class="price">
                             $ 79.00 <span>399,00</span>
                         </div>
-                        <div class="Quantity">
+                        <div class="quantity">
                             <span>qty:</span>
                             <span class="qty-num">
                                 1
@@ -148,10 +213,10 @@
             </div>        
         </div>
 
-        <div class="product-details">
+        <div class="product-info">
             <div class="container">
                 <div class="switch-title">
-                    <div class="title">description</div>
+                    <div class="title active">description</div>
                     <div class="title">information</div>
                     <div class="title">reviews(12)</div>
                 </div>
@@ -174,8 +239,8 @@
         <div class="related-products">
             <div class="container">
                 <div class="title">related products</div>
-                <div class="row bestSeller-items">
-                    <div class="col">
+                <div class="row related-product-item">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg">
                         <div class="product-photo new-tag">
                             <img src="https://via.placeholder.com/213x213/f8f8f8/000000/?text=product_photo 213x213" alt="product">
                             <div class="star-icon active">
@@ -198,7 +263,7 @@
                             <div class="price">€ 287,00</div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg">
                         <div class="product-photo">
                             <img src="https://via.placeholder.com/213x213/f8f8f8/000000/?text=product_photo 213x213" alt="product">
                             <div class="star-icon">
@@ -221,7 +286,7 @@
                             <div class="price">€ 399,00</div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg">
                         <div class="product-photo">
                             <img src="https://via.placeholder.com/213x213/f8f8f8/000000/?text=product_photo 213x213" alt="product">
                             <div class="star-icon">
@@ -244,7 +309,7 @@
                             <div class="price">€ 198,00</div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg">
                         <div class="product-photo new-tag discount-tag">
                             <img src="https://via.placeholder.com/213x213/f8f8f8/000000/?text=product_photo 213x213" alt="product">
                             <div class="star-icon">
@@ -267,7 +332,7 @@
                             <div class="price">€ 200,00</div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg">
                         <div class="product-photo">
                             <img src="https://via.placeholder.com/213x213/f8f8f8/000000/?text=product_photo 213x213" alt="product">
                             <div class="star-icon">
@@ -413,6 +478,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/productDetail.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/multirange.css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
+    <script src="js/multirange.js"></script>
+
+</head>
+<body class="productList">
+    
+    <div id="header">
+        <div class="container-fluid overflow-hidden">
+            <div id="nav">
+                <div class="row p-lg-5 py-3">
+                    <div class="col-md-12 col-lg-4 left-area">
+                        <div class="logo">
+                            <img src="https://via.placeholder.com/228x62/000000/FFFFFF/?text=logo" alt="logo" class="">
+                        </div>
+                        <a href="tel:+1-555-333-22-11" class="d-none d-md-block">+1 (555) 333 22 11</a>
+                    </div>
+                    <div class="col-md-12 col-lg-8 d-none d-md-flex right-area mt-sm-3 mt-lg-0">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="productList.html">products</a></li>
+                            <li><a href="#">pages</a></li>
+                            <li><a href="blogPostlist.html">blog</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                        <div class="shortcut-icon">
+                            <span><i class="fas fa-search"></i></span>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-md-none pb-5">
+                    <div class="hambergerg-area text-center">
+                        <div class="menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="nav-items">
+                            <ul>
+                                <a href="index.html"><li>home</li></a>
+                                <a href="productList.html"><li>products</li></a>
+                                <a href="#"><li>pages</li></a>
+                                <a href="about.html"><li>about</li></a>
+                                <a href="blogPostlist.html"><li>blog</li></a>
+                                <a href="contact.html"><li>contact</li></a>
+                                <a href="#"><li><i class="fas fa-search"></i></li></a>
+                                <a href="#" class="shopping-cart d-flex">
+                                    <div class="icon">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h6>shopping cart</h6>
+                                        <p><span>3 </span>items $<span>74.00</span></p>
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title">chairs</h1>
+                        <div id="breadcrumbs">
+                            <ul class="justify-content-center">
+                                <li><a href="index.html">home</a></li>
+                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
+                                <li><a href="productList.html">products</a></li>
+                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
+                                <li>chairs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 sidebar-left d-sm-block">
+                        <div class="row">
+                            <div class="col-12 filter-area">
+                                <div class="filter-box">
+                                    <div class="title">filter</div>
+                                    <div class="filter-brands">
+                                        <div class="small-title">Filter by Brands</div>
+                                        <ul class="brands">
+                                            <li class="">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">casali</div>
+                                                <div class="qty">2</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">decar</div>
+                                                <div class="qty">12</div>
+                                            </li>
+                                            <li class="active">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">fantini</div>
+                                                <div class="qty">4</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">flamentstyle</div>
+                                                <div class="qty">4</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">heerenhuis</div>
+                                                <div class="qty">6</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">hoffmann</div>
+                                                <div class="qty">10</div>
+                                            </li>
+                                            <li class="">
+                                                <div class="checkbox"></div>
+                                                <div class="brand">italfloor</div>
+                                                <div class="qty">3</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-price">
+                                        <div class="small-title">Filter by Price</div>
+                                        <!-- <div class="draggble-bar"></div> -->
+                                        <input type="range" class="draggble-bar" multiple value="30,80" />
+                                        <div class="price">
+                                            Price $10 - $599
+                                            <span class="filter-button">filter</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 categories-area">
+                                <div class="categories-box">
+                                    <div class="title">categories</div>
+                                    <ul>
+                                        <li>
+                                            <div class="category">chairs</div>
+                                            <span>12</span>
+                                        </li>
+                                        <li>
+                                            <div class="category">sofas</div>
+                                            <span>24</span>
+                                        </li>
+                                        <li>
+                                            <div class="category">armchairs</div>
+                                            <span>9</span>
+                                        </li>
+                                        <li>
+                                            <div class="category">bedroom</div>
+                                            <span>2</span>
+                                        </li>
+                                        <li>
+                                            <div class="category">lighting</div>
+                                            <span>17</span>
+                                        </li>
+                                        <li>
+                                            <div class="category">kitchen</div>
+                                            <span>10</span>
+                                        </li>
+                                        <li>
+                                            <div class="category">accessories</div>
+                                            <span>23</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 hotSale-area">
+                                <div class="hotSale-box">
+                                    <div class="title">hot sale</div>
+                                    <a href="productDetail.html" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/79x79/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">egon wooden chair</div>
+                                            <div class="star-icon active">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="price">
+                                                <span>$75,00</span>
+                                                $55,00
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productDetail.html" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/79x79/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">oyo cantilever chair</div>
+                                            <div class="star-icon">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="price">
+                                                <span class="d-none">$75,00</span>
+                                                $55,00
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productDetail.html" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/79x79/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">kurve chair</div>
+                                            <div class="star-icon active">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="price">
+                                                <span>$75,00</span>
+                                                $55,00
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productDetail.html" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/79x79/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">marvelous wooden chair</div>
+                                            <div class="star-icon">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="price">
+                                                <span>$75,00</span>
+                                                $55,00
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="darker-filter"></div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="products-box">
+                            <div class="products-list-header">
+                                <div class="showing-infos">
+                                    <div class="showing-info">
+                                        Showing <span>1-9</span>
+                                        of <span>65</span> result
+                                    </div>
+                                    <div class="control-show-qty">
+                                        View
+                                        <span>9 </span>/
+                                        <span>18 </span>/
+                                        <span>27 </span>/
+                                        <span>All </span>
+                                    </div>
+                                </div>
+                                <div class="switch-showing-type-box">
+                                    <div class="sorting-type">
+                                        default sorting-type
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                    <div class="cube-type">
+                                        <i class="fas fa-th-large"></i>
+                                    </div>
+                                    <div class="list-type">
+                                        <i class="fas fa-th-list"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,chair" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon active">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">bombi chair</div>
+                                        <div class="price">€ 399,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,wood" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">marvelous modern 3 seater</div>
+                                        <div class="price">€ 599,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo discount-tag">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,bed" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">chair with armrests</div>
+                                        <div class="price">€ 200,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,desk" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon active">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">pouf chair</div>
+                                        <div class="price">€ 399,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,beuty" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon active">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">jalis counter stool</div>
+                                        <div class="price">€ 269,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,seat" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">bombi chair</div>
+                                        <div class="price">€ 399,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,kitchen" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon active">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">lucky chair</div>
+                                        <div class="price">€ 399,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,design" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon active">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">cut chair with 4 spoke base</div>
+                                        <div class="price">€ 269,00</div>
+                                    </div>
+                                </a>
+                                <a href="productDetail.html" class="col-12 col-sm-6 col-md-4 product-item">
+                                    <div class="product-photo">
+                                        <img src="https://source.unsplash.com/275x275/?Furniture,light" alt="post_photo" class="">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="star-icon">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="title">Yard SeChair</div>
+                                        <div class="price">€ 139,00</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pages-switch">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div class="bg-gray">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <div class="icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    free shipping
+                                </div>
+                                <div class="subtitle">
+                                    Free shipping on all US order
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="icon">
+                                <i class="far fa-life-ring"></i>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    support 24/7
+                                </div>
+                                <div class="subtitle">
+                                    We support 24 hours a day
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    gift cards
+                                </div>
+                                <div class="subtitle">
+                                    Give perfect gift
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="icon">
+                                <i class="far fa-money-bill-alt"></i>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    payment 100% secure
+                                </div>
+                                <div class="subtitle">
+                                    Payment 100% secure
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="first col-12 col-md-3">
+                            <div class="logo">
+                                <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                            </div>
+                            <p class="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos!
+                            </p>
+                            <a href="#" class="address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Connaugt Road Central Suite 18B,148<br>New Yankee</p>
+                            </a>
+                            <div class="contact-info">
+                                <a href="tel:+1-555-333-22-11" class="phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <p>+1 (555) 333 22 11</p>
+                                </a>
+                                <a href="mailTo:info@schon.chair" class="mail">
+                                    <i class="far fa-envelope"></i>
+                                    <p>info@schon.chair</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="second col-12 col-md-2">
+                            <div class="title">categories</div>
+                            <ul>
+                                <li><a href="#">chairs</a></li>
+                                <li><a href="#">sofas</a></li>
+                                <li><a href="#">living</a></li>
+                                <li><a href="#">bedroom</a></li>
+                                <li><a href="#">tables</a></li>
+                                <li><a href="#">new</a></li>
+                            </ul>
+                        </div>
+                        <div class="third col-12 col-md-2">
+                            <div class="title">information</div>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">contact us</a></li>
+                                <li><a href="#">terms & conditions</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">customer service</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="fourth col-12 col-md-2">
+                            <div class="title">account</div>
+                            <ul>
+                                <li><a href="#">my account</a></li>
+                                <li><a href="#">order tracking</a></li>
+                                <li><a href="#">wish list</a></li>
+                                <li><a href="#">shopping cart</a></li>
+                                <li><a href="#">checkout</a></li>
+                            </ul>
+                        </div>
+                        <div class="fifth col-12 col-md-3 text-md-right mb-3">
+                            <div class="title">sign up newsletter</div>
+                            <div class="subscribe-box text-left">
+                                <input type="text" placeholder="Your email">
+                                <button type="button">subscribe</button>
+                            </div>
+                            <div class="title">follow us</div>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="box">
+                            <span>©</span>
+                            <div class="logo">
+                                <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                            </div>
+                            <span>-All right Reserved</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+                            <li><a href="#"><i class="fab fa-amazon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar-switch" class="d-flex d-md-none">
+        <div class="circle">
+            <i class="fas fa-angle-double-right"></i>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/productDetail.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#sidebar-switch').click(function(){
+
+                $('#sidebar-switch').toggleClass('open');
+                $('.sidebar-left').toggleClass('open');
+                $('#darker-filter').toggleClass('open');
+            });
+
+            $('.brands li').click(function(e){
+                $(e.currentTarget).toggleClass('active');
+            })
+
+        });
+
+    </script>
+
+</body>
+</html>
