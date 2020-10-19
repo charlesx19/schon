@@ -199,13 +199,33 @@
                         </div>
                         <div class="quantity">
                             <span>qty:</span>
-                            <span class="qty-num">
+                            <div class="dropdown">
+                                <div class="qty-num" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                1
+                                </div>
+                                <span class="angle-box">
+                                    <i class="fas fa-angle-up"></i>
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">1</a>
+                                  <a class="dropdown-item" href="#">2</a>
+                                  <a class="dropdown-item" href="#">3</a>
+                                  <a class="dropdown-item" href="#">4</a>
+                                  <a class="dropdown-item" href="#">5</a>
+                                  <a class="dropdown-item" href="#">6</a>
+                                  <a class="dropdown-item" href="#">7</a>
+                                  <a class="dropdown-item" href="#">8</a>
+                                  <a class="dropdown-item" href="#">9</a>
+                                </div>
+                              </div>
+                            <!-- <span class="qty-num">
                                 1
                                 <span class="angle-box">
                                     <i class="fas fa-angle-up"></i>
                                     <i class="fas fa-angle-down"></i>
                                 </span>
-                            </span>
+                            </span> -->
                             <span class="addToCart">add to cart</span>
                         </div>
                     </div>
@@ -215,7 +235,7 @@
 
         <div class="product-info">
             <div class="container">
-                <div class="switch-title">
+                <!-- <div class="switch-title">
                     <div class="title active">description</div>
                     <div class="title">information</div>
                     <div class="title">reviews(12)</div>
@@ -232,7 +252,55 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing.
                     <br>
                     H 830 x L 585 x P540mm.
-                </p>
+                </p> -->
+                <nav>
+                    <div class="nav nav-tabs switch-title" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">description</a>
+                      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">information</a>
+                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">reviews(12)</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="desc tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        DESCRIPTION Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quam nihil suscipit non porro quis natus? Provident laboriosam quis voluptas repellendus numquam deleniti, nisi vitae quos repellat accusantium id blanditiis ducimus, a, laborum facere ab.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis debitis, earum atque officia nulla id? Voluptates quia consectetur quos nulla, qui quaerat illum itaque perferendis vitae quas aliquam perspiciatis iure suscipit a quam velit et architecto corporis necessitatibus ad voluptate. Necessitatibus, nulla! Incidunt libero eum cupiditate voluptatibus beatae perferendis voluptatum asperiores magnam veniam officiis?
+                        <br>
+                        Lorem, ipsum dolor.
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        <br>
+                        H 830 x L 585 x P540mm.
+                    </div>
+                    <div class="desc tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        INFORMATION Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quam nihil suscipit non porro quis natus? Provident laboriosam quis voluptas repellendus numquam deleniti, nisi vitae quos repellat accusantium id blanditiis ducimus, a, laborum facere ab.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis debitis, earum atque officia nulla id? Voluptates quia consectetur quos nulla, qui quaerat illum itaque perferendis vitae quas aliquam perspiciatis iure suscipit a quam velit et architecto corporis necessitatibus ad voluptate. Necessitatibus, nulla! Incidunt libero eum cupiditate voluptatibus beatae perferendis voluptatum asperiores magnam veniam officiis?
+                        <br>
+                        Lorem, ipsum dolor.
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        <br>
+                        H 830 x L 585 x P540mm.
+                    </div>
+                    <div class="desc tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        REVIEWS(12) Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quam nihil suscipit non porro quis natus? Provident laboriosam quis voluptas repellendus numquam deleniti, nisi vitae quos repellat accusantium id blanditiis ducimus, a, laborum facere ab.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis debitis, earum atque officia nulla id? Voluptates quia consectetur quos nulla, qui quaerat illum itaque perferendis vitae quas aliquam perspiciatis iure suscipit a quam velit et architecto corporis necessitatibus ad voluptate. Necessitatibus, nulla! Incidunt libero eum cupiditate voluptatibus beatae perferendis voluptatum asperiores magnam veniam officiis?
+                        <br>
+                        Lorem, ipsum dolor.
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        <br>
+                        H 830 x L 585 x P540mm.
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -254,7 +322,7 @@
                                    <i class="fas fa-shopping-bag"></i>
                                     Add to Cart
                                 </div>
-                                <div class="favorite-icon"><i class="far fa-heart"></i></div>
+                                <div class="favorite-icon"><i class="far fa-heart"></i><i class="fas fa-heart d-none"></i></div>
                                 <div class="exchange-icon"><i class="fas fa-exchange-alt"></i></div>
                             </div>
                         </div>
@@ -277,7 +345,7 @@
                                    <i class="fas fa-shopping-bag"></i>
                                     Add to Cart
                                 </div>
-                                <div class="favorite-icon"><i class="far fa-heart"></i></div>
+                                <div class="favorite-icon"><i class="far fa-heart"></i><i class="fas fa-heart d-none"></i></div>
                                 <div class="exchange-icon"><i class="fas fa-exchange-alt"></i></div>
                             </div>
                         </div>
@@ -300,7 +368,7 @@
                                    <i class="fas fa-shopping-bag"></i>
                                     Add to Cart
                                 </div>
-                                <div class="favorite-icon"><i class="far fa-heart"></i></div>
+                                <div class="favorite-icon"><i class="far fa-heart"></i><i class="fas fa-heart d-none"></i></div>
                                 <div class="exchange-icon"><i class="fas fa-exchange-alt"></i></div>
                             </div>
                         </div>
@@ -323,7 +391,7 @@
                                    <i class="fas fa-shopping-bag"></i>
                                     Add to Cart
                                 </div>
-                                <div class="favorite-icon"><i class="far fa-heart"></i></div>
+                                <div class="favorite-icon"><i class="far fa-heart"></i><i class="fas fa-heart d-none"></i></div>
                                 <div class="exchange-icon"><i class="fas fa-exchange-alt"></i></div>
                             </div>
                         </div>
@@ -345,7 +413,7 @@
                                 <div class="add-to-cart">
                                    <i class="fas fa-shopping-bag"></i>
                                 </div>
-                                <div class="favorite-icon"><i class="far fa-heart"></i></div>
+                                <div class="favorite-icon"><i class="far fa-heart"></i><i class="fas fa-heart d-none"></i></div>
                                 <div class="eye-icon"><i class="far fa-eye"></i></div>
                             </div>
                         </div>
@@ -479,6 +547,35 @@
 
     <script src="js/main.js"></script>
     <script src="js/productDetail.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.dropdown-item').click(function(e){
+                e.preventDefault();
+                var num = $(e.currentTarget).text();
+                $('.qty-num').text(num);
+            });
+
+            $('.add-to-cart').click(function(e){
+                $(e.currentTarget).toggleClass('quick-bar-red');
+            });
+            $('.favorite-icon').click(function(e){
+                $(e.currentTarget).toggleClass('quick-bar-red');
+                $(e.currentTarget).find('.far').toggleClass('d-none');
+                $(e.currentTarget).find('.fas').toggleClass('d-none');
+            });
+            $('.exchange-icon').click(function(e){
+                $(e.currentTarget).toggleClass('quick-bar-red');
+            });
+            $('.eye-icon').click(function(e){
+                $(e.currentTarget).toggleClass('quick-bar-red');
+            });
+
+        });
+
+    </script>
 
 </body>
 </html>

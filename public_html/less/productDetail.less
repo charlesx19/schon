@@ -149,23 +149,52 @@
                     text-transform: uppercase;
                     color: #bababa;
                 }
+                // .qty-num {
+                //     display: flex;
+                //     height: 44px;
+                //     padding: 0 19px 0 25px;
+                //     line-height: 44px;
+                //     border-radius: 22px;
+                //     background: white;
+                //     cursor: pointer;
+                //     .angle-box {
+                //         display: flex;
+                //         flex-direction: column;
+                //         justify-content: center;
+                //         margin-left: 10px;
+                //         i {
+                //             line-height: 8px;
+                //             color: #bababa;
+                //         }
+                //     }
+                // }
                 .qty-num {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     height: 44px;
-                    padding: 0 19px 0 25px;
-                    line-height: 44px;
-                    border-radius: 22px;
+                    margin-right: 26px;
+                    padding: 0 35px 0 20px;
                     background: white;
+                    line-height: 44px;
+                    border: none;
+                    border-radius: 22px;
                     cursor: pointer;
-                    .angle-box {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        margin-left: 10px;
-                        i {
-                            line-height: 8px;
-                            color: #bababa;
-                        }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .angle-box {
+                    position: absolute;
+                    left: 30%;
+                    top: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 10px;
+                    i {
+                        line-height: 8px;
+                        color: #bababa;
                     }
                 }
                 .addToCart {
@@ -185,12 +214,19 @@
                 display: flex;
                 justify-content: center;
                 border-bottom: 1px solid #c8c8c8;
-                .title {
+                .nav-link:hover {
+                    border: transparent;
+                }
+                .nav-item {
                     padding: 18px 0;
                     margin: 0 27px;
                     font-size: 13px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #495057;
                     cursor: pointer;
                     &.active {
+                        border: none;
                         border-bottom: 3px solid #000;
                     }
                 }
@@ -279,6 +315,12 @@
                         i {
                             margin-right: 5px;
                         }
+                        &.quick-bar-red {
+                            color: #f46060;
+                            i {
+                                color: #f46060;
+                            }
+                        }
                     }
                     .favorite-icon {
                         width: 20%;
@@ -287,12 +329,22 @@
                         border-left: 1px solid #eee;
                         border-right: 1px solid #eee;
                         cursor: pointer;
+                        &.quick-bar-red {
+                            i {
+                                color: #f46060;
+                            }
+                        }
                     }
                     .exchange-icon {
                         width: 20%;
                         line-height: 50px;
                         text-align: center;
                         cursor: pointer;
+                        &.quick-bar-red {
+                            i {
+                                color: #f46060;
+                            }
+                        }
                     }
                 }
                 .quick-bar-2 {
@@ -316,6 +368,11 @@
                         line-height: 25px;
                         text-align: center;
                         cursor: pointer;
+                        &.quick-bar-red {
+                            i {
+                                color: #f46060;
+                            }
+                        }
                         i {
                             margin-right: 5px;
                         }
@@ -327,12 +384,22 @@
                         border-left: 1px solid #eee;
                         border-right: 1px solid #eee;
                         cursor: pointer;
+                        &.quick-bar-red {
+                            i {
+                                color: #f46060;
+                            }
+                        }
                     }
                     .eye-icon {
                         width: 33.333333%;
                         line-height: 25px;
                         text-align: center;
                         cursor: pointer;
+                        &.quick-bar-red {
+                            i {
+                                color: #f46060;
+                            }
+                        }
                     }
                 }
                 &:hover .quick-bar {
