@@ -19,7 +19,7 @@
 <body class="about productDetail">
     
     <div id="header">
-        <div class="container-fluid overflow-hidden">
+        <div class="container-fluid">
             <div id="nav">
                 <div class="row p-lg-5 py-3">
                     <div class="col-md-12 col-lg-4 left-area">
@@ -40,7 +40,66 @@
                         <div class="shortcut-icon">
                             <span><i class="fas fa-search"></i></span>
                             <a href="#"><i class="far fa-heart"></i></a>
-                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#" class="shopping-bag"><i class="fas fa-shopping-bag"></i></a>
+                        </div>
+                        <div class="cart-panel position-absolute">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Marvelous Modern 3 Seater</div>
+                                            <div class="price">
+                                                € 599,00
+                                            </div>
+                                            <div class="qty">
+                                                Qty: 1
+                                            </div>
+                                        </div>
+                                        <div class="close">X</div>
+                                    </a>
+                                    <a href="#" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Marvelous Modern 3 Seater</div>
+                                            <div class="price">
+                                                € 599,00
+                                            </div>
+                                            <div class="qty">
+                                                Qty: 1
+                                            </div>
+                                        </div>
+                                        <div class="close">X</div>
+                                    </a>
+                                    <a href="#" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Marvelous Modern 3 Seater</div>
+                                            <div class="price">
+                                                € 599,00
+                                            </div>
+                                            <div class="qty">
+                                                Qty: 1
+                                            </div>
+                                        </div>
+                                        <div class="close">X</div>
+                                    </a>
+                                    <div class="price-info">
+                                        Sub Total
+                                        <span>€ 799,00</span>
+                                    </div>
+                                    <div class="footer">
+                                        <a href="shoppingCart.html">view cart</a>
+                                        <a href="shoppingCart-checkOut.html">checkout</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -428,7 +487,6 @@
 
     </div>
 
-
     <div id="footer">
         <div class="bg-gray">
             <div class="container">
@@ -539,6 +597,10 @@
         </div>
     </div>
 
+    <div id="darker-filter" class=""></div>
+    <div id="darker-filter-cart" class=""></div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -547,35 +609,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/productDetail.js"></script>
-
-    <script>
-
-        $(document).ready(function(){
-
-            $('.dropdown-item').click(function(e){
-                e.preventDefault();
-                var num = $(e.currentTarget).text();
-                $('.qty-num').text(num);
-            });
-
-            $('.add-to-cart').click(function(e){
-                $(e.currentTarget).toggleClass('quick-bar-red');
-            });
-            $('.favorite-icon').click(function(e){
-                $(e.currentTarget).toggleClass('quick-bar-red');
-                $(e.currentTarget).find('.far').toggleClass('d-none');
-                $(e.currentTarget).find('.fas').toggleClass('d-none');
-            });
-            $('.exchange-icon').click(function(e){
-                $(e.currentTarget).toggleClass('quick-bar-red');
-            });
-            $('.eye-icon').click(function(e){
-                $(e.currentTarget).toggleClass('quick-bar-red');
-            });
-
-        });
-
-    </script>
-
+    
 </body>
 </html>

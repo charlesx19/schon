@@ -19,7 +19,7 @@
 <body class="blog blogDetail">
     
     <div id="header">
-        <div class="container-fluid overflow-hidden">
+        <div class="container-fluid">
             <div id="nav">
                 <div class="row p-lg-5 py-3">
                     <div class="col-md-12 col-lg-4 col-xl-3 left-area">
@@ -40,9 +40,68 @@
                         <div class="shortcut-icon">
                             <span><i class="fas fa-search"></i></span>
                             <a href="#"><i class="far fa-heart"></i></a>
-                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#" class="shopping-bag"><i class="fas fa-shopping-bag"></i></a>
                             <div class="hambergerg">
                                 <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="cart-panel position-absolute">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Marvelous Modern 3 Seater</div>
+                                            <div class="price">
+                                                € 599,00
+                                            </div>
+                                            <div class="qty">
+                                                Qty: 1
+                                            </div>
+                                        </div>
+                                        <div class="close">X</div>
+                                    </a>
+                                    <a href="#" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Marvelous Modern 3 Seater</div>
+                                            <div class="price">
+                                                € 599,00
+                                            </div>
+                                            <div class="qty">
+                                                Qty: 1
+                                            </div>
+                                        </div>
+                                        <div class="close">X</div>
+                                    </a>
+                                    <a href="#" class="product-box">
+                                        <div class="photo">
+                                            <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Marvelous Modern 3 Seater</div>
+                                            <div class="price">
+                                                € 599,00
+                                            </div>
+                                            <div class="qty">
+                                                Qty: 1
+                                            </div>
+                                        </div>
+                                        <div class="close">X</div>
+                                    </a>
+                                    <div class="price-info">
+                                        Sub Total
+                                        <span>€ 799,00</span>
+                                    </div>
+                                    <div class="footer">
+                                        <a href="shoppingCart.html">view cart</a>
+                                        <a href="shoppingCart-checkOut.html">checkout</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,9 +161,9 @@
                         </div>
                     </div>
                     <div class="col-1">
-                        <div class="cube">
+                        <a href="blogMasonry.html" class="cube">
                             <i class="fas fa-th"></i>
-                        </div>
+                        </a>
                     </div>
                     <div class="col d-flex justify-content-end">
                         <div class="search d-none d-sm-block">
@@ -381,103 +440,8 @@
         </div>
     </div>
 
-    <!-- <div id="sidebar-switch" class="d-flex d-md-none">
-        <div class="circle">
-            <i class="fas fa-angle-double-left"></i>
-        </div>
-    </div>
-    <div class="container sidebar-area sidebar-full">
-        <div class="close">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="categories-area mb-5">
-                    <div class="title">categories</div>
-                    <div class="categories-box">
-                        <a href="#">design</a>
-                        <a href="#">future</a>
-                        <a href="#">kitchen</a>
-                        <a href="#">photography</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="popularPost-area mb-5">
-                    <div class="title">popular post</div>
-                    <a href="#" class="popularPost-box">
-                        <div class="info">
-                            <p class="desc">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                            <p class="date">
-                                24.09.2015
-                            </p>
-                        </div>
-                        <div class="thumbnail">
-                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                        </div>
-                    </a>
-                    <a href="#" class="popularPost-box d-flex">
-                        <div class="info">
-                            <p class="desc">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                            <p class="date">
-                                24.09.2015
-                            </p>
-                        </div>
-                        <div class="thumbnail">
-                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                        </div>
-                    </a>
-                    <a href="#" class="popularPost-box d-flex">
-                        <div class="info">
-                            <p class="desc">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                            <p class="date">
-                                24.09.2015
-                            </p>
-                        </div>
-                        <div class="thumbnail">
-                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                        </div>
-                    </a>
-                    <a href="#" class="popularPost-box d-flex">
-                        <div class="info">
-                            <p class="desc">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                            <p class="date">
-                                24.09.2015
-                            </p>
-                        </div>
-                        <div class="thumbnail">
-                            <img src="https://source.unsplash.com/100x100/?nature,mountain" alt="post_photo" class="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="tags-area">
-                    <div class="title">tags</div>
-                    <div class="tags-box">
-                        <a href="#">fusce, </a>
-                        <a href="#">mattis, </a>
-                        <a href="#">nunc, </a>
-                        <a href="#">lacus, </a>
-                        <a href="#">vulputate, </a>
-                        <a href="#">facilisis, </a>
-                        <a href="#">dui, </a>
-                        <a href="#">efficitur, </a>
-                        <a href="#">ut </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
+    <div id="darker-filter" class=""></div>
+    <div id="darker-filter-cart" class=""></div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
