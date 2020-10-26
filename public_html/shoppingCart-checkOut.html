@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Check Out</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/bf3a744687.js" crossorigin="anonymous"></script>
+</head>
+<body class="shoppingCart shoppingCart-checkOut about">
+    
+    <div id="header" class="bg-gray">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 ">
+                        <a href="tel:+1-555-333-22-11" class="top-link">
+                            <i class="fas fa-phone-alt"></i>
+                            +1 (555) 333 22 11
+                        </a>
+                    </div>
+                    <div class="d-none d-md-block col-md-6 text-right">
+                        <a href="#" class="top-link login">Login or Create Account</a>
+                        <select class="top-link">
+                            <option>Language</option>
+                            <option>English</option>
+                            <option>Germany</option>
+                            <option>Chinese</option>
+                            <option>Japanese</option>
+                            <option>Korea</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-md-none pb-5 position-relative">
+            <div class="hambergerg-area text-center">
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <a href="index.html"><li>home</li></a>
+                        <a href="productList.html"><li>product</li></a>
+                        <a href="#"><li>pages</li></a>
+                        <a href="about.html"><li>about</li></a>
+                        <a href="blogPostlist.html"><li>blog</li></a>
+                        <a href="contact.html"><li>contact</li></a>
+                        <a href="#"><li><i class="fas fa-search"></i></li></a>
+                        <a class="shopping-cart d-flex">
+                            <div class="icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="cart-info">
+                                <h6>shopping cart</h6>
+                                <p><span>3 </span>items $<span>74.00</span></p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+        <div class="header d-none d-md-block">
+            <div class="container">
+                <div class="row no-gutters align-items-center nav-bar bg-white">
+                    <div class="col-3">
+                        <div id="logo">
+                            <img src="https://via.placeholder.com/114x31/000000/FFFFFF/?text=logo" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div id="nav">
+                            <ul class="d-flex">
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="productList.html">products</a></li>
+                                <li><a href="#">collections</a></li>
+                                <li><a href="#">pages</a></li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 pl-3 d-flex shortcut-icons">
+                        <div class="icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <a href="#" class="icon shopping-cart d-flex">
+                            <div class="bag">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="cart-panel position-absolute">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="#" class="product-box">
+                                            <div class="photo">
+                                                <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">Marvelous Modern 3 Seater</div>
+                                                <div class="price">
+                                                    € 599,00
+                                                </div>
+                                                <div class="qty">
+                                                    Qty: 1
+                                                </div>
+                                            </div>
+                                            <div class="close">X</div>
+                                        </a>
+                                        <a href="#" class="product-box">
+                                            <div class="photo">
+                                                <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">Marvelous Modern 3 Seater</div>
+                                                <div class="price">
+                                                    € 599,00
+                                                </div>
+                                                <div class="qty">
+                                                    Qty: 1
+                                                </div>
+                                            </div>
+                                            <div class="close">X</div>
+                                        </a>
+                                        <a href="#" class="product-box">
+                                            <div class="photo">
+                                                <img src="https://via.placeholder.com/74x74/f8f8f8/222222/?text=product" alt="product" class="">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">Marvelous Modern 3 Seater</div>
+                                                <div class="price">
+                                                    € 599,00
+                                                </div>
+                                                <div class="qty">
+                                                    Qty: 1
+                                                </div>
+                                            </div>
+                                            <div class="close">X</div>
+                                        </a>
+                                        <div class="price-info">
+                                            Sub Total
+                                            <span>€ 799,00</span>
+                                        </div>
+                                        <div class="footer">
+                                            <a href="shoppingCart.html">view cart</a>
+                                            <a href="shoppingCart-checkOut.html">checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title">check out</h1>
+                    </div>
+                    <div class="col-12">
+                        <div id="breadcrumbs">
+                            <ul class="">
+                                <li><a href="#">home</a></li>
+                                <li class="angle-right"><i class="fas fa-angle-right"></i></li>
+                                <li>shopping cart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="">
+        <div class="container">
+            <div class="order-step-area">
+                <div class="row justify-content-center">
+                    <div class="col active">
+                        <div class="circle">01</div>
+                        <div class="subtitle">shopping cart</div>
+                    </div>
+                    <div class="col middle-item active">
+                        <div class="circle">02</div>
+                        <div class="subtitle">check out</div>
+                    </div>
+                    <div class="col">
+                        <div class="circle">03</div>
+                        <div class="subtitle">order complete</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="row header">
+                    <div class="col-12">
+                        <div class="title">
+                            billing details
+                        </div>
+                    </div>
+                </div>
+                <div class="row body">
+                    <div class="col-12 col-md-6 billing-details mb-5 mb-md-0">
+                        <form action="#">
+                            <select name="country" class="country">
+                                <option value="">Select Country</option>
+                                <option value="english">English</option>
+                                <option value="canada">Canada</option>
+                                <option value="japan">Japan</option>
+                            </select>
+                            <div class="name-box">
+                                <input type="text" class="firstName" placeholder="Name">
+                                <input type="text" class="lastName" placeholder="Last Name">
+                            </div>
+                            <input type="text" class="" placeholder="Company Name">
+                            <textarea name="address" rows="3" placeholder="Address"></textarea>
+                            <input type="text" class="" placeholder="Town / City">
+                            <input type="text" class="" placeholder="State / Country">
+                            <input type="text" class="" placeholder="Postcode / Zip">
+                            <div class="contactInfo-box">
+                                <input type="email" class="email" placeholder="Email Address">
+                                <input type="text" class="phoneNumber" placeholder="Phone Number">
+                            </div>
+                            <div class="checkBillingAddress">
+                                <input type="checkbox" id="checkBillingAddress">
+                                <label for="checkBillingAddress"> Ship to different address?</label>
+                            </div>
+                            <textarea name="orderNotes" rows="3" placeholder="Order Notes"></textarea>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 final-check">
+                        <div class="inner-box">
+                            <div class="row">
+                                <div class="col-12 order-detail">
+                                    <div class="title">your order</div>
+                                    <div class="row-box subtitle">
+                                        <span>products</span>
+                                        <span>totals</span>
+                                    </div>
+                                    <div class="row-box ordered-products">
+                                        <div class="ordered-product">
+                                            <span>marvelous modern 3 seater<span>x1</span></span>
+                                            <div>€ 299,00</div>
+                                        </div>
+                                        <div class="ordered-product">
+                                            <span>bombi chair<span>x1</span></span>
+                                            <div>€ 532,00</div>
+                                        </div>
+                                    </div>
+                                    <div class="row-box">
+                                        <span>cart subtotal</span>
+                                        <div>€ 532,00</div>
+                                    </div>
+                                    <div class="row-box">
+                                        <span>shipping</span>
+                                        <div>Free Shipping</div>
+                                    </div>
+                                    <div class="row-box">
+                                        <span>order total</span>
+                                        <div>€ 1299,00</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 payment-methods">
+                                    <div class="title">payment methods</div>
+                                    <div class="row-box subtitle">
+                                       <label for="bankTransfer">direct bank transfer</label>
+                                       <input type="checkbox" name="bankTransfer" id="bankTransfer">
+                                    </div>
+                                    <div class="row-box">
+                                        <p class="desc">
+                                            Make your payment directly into our bank account. Please use your order id as the payment reference. Your order wont be shippided until the funds have cleared in our account.
+                                        </p>
+                                    </div>
+                                    <div class="row-box">
+                                        <label for="chequePayment">cheque payment</label>
+                                        <input type="checkbox" name="bankTransfer" id="chequePayment">
+                                    </div>
+                                    <div class="row-box">
+                                        <label for="paypal">paypal</label>
+                                        <input type="checkbox" name="bankTransfer" id="paypal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acceptTerms">
+                            <div class="row-box subtitle">
+                                <label for="acceptTerms">I've read & accept <span>terms & conditions</span></label>
+                                <input type="checkbox" name="acceptTerms" id="acceptTerms">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer">
+                    <a href="shoppingCart-checkOut.html" class="proceedToCheckout">
+                        proceed to checkout
+                        <i class="fas fa-check"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer-top">
+           <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-3">
+                    <div class="icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            free shipping
+                        </div>
+                        <div class="subtitle">
+                            Free shipping on all US order
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="icon">
+                        <i class="far fa-life-ring"></i>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            support 24/7
+                        </div>
+                        <div class="subtitle">
+                            We support 24 hours a day
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            gift cards
+                        </div>
+                        <div class="subtitle">
+                            Give perfect gift
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="icon">
+                        <i class="far fa-money-bill-alt"></i>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            payment 100% secure
+                        </div>
+                        <div class="subtitle">
+                            Payment 100% secure
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="bg-gray">
+            <div class="container">
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="first col-12 col-md-3">
+                            <div class="logo">
+                                <img src="https://via.placeholder.com/114x31/7f7f7f/FFFFFF/?text=logo" alt="logo">
+                            </div>
+                            <p class="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos!
+                            </p>
+                            <a href="#" class="address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Connaugt Road Central Suite 18B,148<br>New Yankee</p>
+                            </a>
+                            <div class="contact-info">
+                                <a href="tel:+1-555-333-22-11" class="phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <p>+1 (555) 333 22 11</p>
+                                </a>
+                                <a href="mailTo:info@schon.chair" class="mail">
+                                    <i class="far fa-envelope"></i>
+                                    <p>info@schon.chair</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="second col-12 col-md-2">
+                            <div class="title">categories</div>
+                            <ul>
+                                <li><a href="#">chairs</a></li>
+                                <li><a href="#">sofas</a></li>
+                                <li><a href="#">living</a></li>
+                                <li><a href="#">bedroom</a></li>
+                                <li><a href="#">tables</a></li>
+                                <li><a href="#">new</a></li>
+                            </ul>
+                        </div>
+                        <div class="third col-12 col-md-2">
+                            <div class="title">information</div>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">contact us</a></li>
+                                <li><a href="#">terms & conditions</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">customer service</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="fourth col-12 col-md-2">
+                            <div class="title">account</div>
+                            <ul>
+                                <li><a href="#">my account</a></li>
+                                <li><a href="#">order tracking</a></li>
+                                <li><a href="#">wish list</a></li>
+                                <li><a href="#">shopping cart</a></li>
+                                <li><a href="#">checkout</a></li>
+                            </ul>
+                        </div>
+                        <div class="fifth col-12 col-md-3 text-md-right mb-3">
+                            <div class="title">sign up newsletter</div>
+                            <p class="desc">
+                                Subscript now to get 15% off on any product
+                            </p>
+                            <div class="subscribe-box text-left">
+                                <input type="text" placeholder="Your email">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                            <div class="title">follow us</div>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="box">
+                            <span>©</span>
+                            <div class="logo">
+                                <img src="https://via.placeholder.com/114x31/7a7a7a/FFFFFF/?text=logo" alt="logo">
+                            </div>
+                            <span>-All right Reserved</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+                            <li><a href="#"><i class="fab fa-amazon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="darker-filter"></div>
+    <div id="darker-filter-cart" class=""></div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   <script src="js/main.js"></script>
+   <script src="js/index.js"></script>
+
+</body>
+</html>
