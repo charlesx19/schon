@@ -3,73 +3,25 @@
 }
 
 #header {
-    .row {
-        margin: 0;
-    }
-    .left-area {
-        display: flex;
-        .logo {
-            width: 113px;
-            height: 31px;
-            img {
-                width: 100%;
-                height: auto;
+    .header {
+        .full-width {
+            padding: 50px;
+            .row {
+                margin: 0;
             }
         }
-        a {
-            margin-left: 25px;
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 31px;
-            color: #494949;
-        }
-    }
-    .right-area {
-        display: flex;
-        justify-content: flex-end;
-        ul {
-            li {
-                margin-left: 30px;
-            }
+        #logo {
+            display: flex;
+            align-items: center;
             a {
-                font-size: 14px;
-                color: #494949;
+                margin-left: 29px;
+                font-size: 12px;
                 font-weight: 600;
-                text-transform: uppercase;
+                color: #4b4b4b;
             }
         }
-        .shortcut-icon {
-            margin-left: 40px;
-            a {
-                position: relative;
-                margin-left: 30px;
-            }
-            i {
-                font-size: 24px;
-                color: #494949;
-                &.fa-shopping-bag::after {
-                    content: '3';
-                    position: absolute;
-                    right: -15px;
-                    bottom: -10px;
-                    width: 25px;
-                    height: 25px;
-                    font-size: 12px;
-                    color: white;
-                    line-height: 22px;
-                    text-align: center;
-                    background: #000;
-                    border-radius: 50%;
-                    border: 2px solid white;
-                }
-            }
-        }
-    }
-    .hambergerg-area {
-        .menu {
-            i {
-                color: white;
-            }
+        #nav {
+
         }
     }
 }
@@ -77,6 +29,18 @@
 
 
 .about {
+
+    #header {
+        .header {
+            #logo {
+            }
+            #nav {
+                ul {
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
     
     #content {
     
