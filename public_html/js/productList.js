@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     $(window).resize(function() {
         var wdth=$(window).width();
-        if (wdth > 768) {
+        if (wdth > 767) {
             $('#sidebar-switch').removeClass('open');
             $('.sidebar-left').removeClass('open');
             $('body').removeClass('modal-open');

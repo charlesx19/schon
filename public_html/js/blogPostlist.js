@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('#darker-filter').toggleClass('open');
     });
 
-    $('.close').click(function(){
+    $('.sidebar-area .close').click(function(){
         $('body').toggleClass('modal-open');
         $('#sidebar-switch').toggleClass('open');
         $('.sidebar-full').toggleClass('open');
@@ -17,5 +17,4 @@ $(document).ready(function(){
         $('#darker-filter').toggleClass('open');
     });
    
-
 });

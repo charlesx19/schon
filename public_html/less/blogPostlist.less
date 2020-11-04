@@ -209,54 +209,6 @@
     }
 }
 
-#darker-filter {
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0);
-    z-index: 120;
-    transform: scale(0);
-    transition: all .2s ease-in-out;
-    &.open {
-        transform: scale(1);
-        background: rgba(0,0,0,0.6);
-    }
-    &.whiter {
-        background: rgba(255,255,255,0);
-        &.open {
-            z-index: 80;
-            background: rgba(255,255,255,0.8);
-        }
-    }
-}
-
-#darker-filter-cart {
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0);
-    z-index: 120;
-    transform: scale(0);
-    transition: all .2s ease-in-out;
-    &.open {
-        transform: scale(1);
-        background: rgba(0,0,0,0.6);
-    }
-    &.whiter {
-        background: rgba(255,255,255,0);
-        &.open {
-            z-index: 80;
-            background: rgba(255,255,255,0.8);
-        }
-    }
-}
-
 
 .blogPostlist {
     
