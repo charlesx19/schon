@@ -20,17 +20,35 @@
 
         #header {
             .header {
-                .shortcut-icons {
-                    .icon {
-                        i {
-                            font-size: 16px;
+                .container {
+                    #logo {
+                        justify-content: center;
+                        margin-bottom: 30px;
+                    }
+                    #nav {
+                        justify-content: center;
+                        ul {
+                            width: 100%;
+                        }
+                        .menu-big {
+                            top: 160px;
+                            &:before {
+                                left: 21%;
+                            }
                         }
                     }
-                    .bag:after {
-                        width: 18px;
-                        height: 18px;
-                        right: -11px;
-                        bottom: -6px;
+                    .shortcut-icons {
+                        .icon {
+                            i {
+                                font-size: 16px;
+                            }
+                        }
+                        .bag:after {
+                            width: 18px;
+                            height: 18px;
+                            right: -11px;
+                            bottom: -6px;
+                        }
                     }
                 }
             }
@@ -59,6 +77,36 @@
 @media (max-width: 767.98px) {
 
     .shoppingCart {
+
+        #header {
+            .header {
+                .container {
+                    margin: 0;
+                    & > div {
+                        padding: 0;
+                        width: 100vw;
+                    }
+                    #nav {
+                        justify-content: center;
+                        ul {
+                            width: 100%;
+                            & > div {
+                                height: 14.285%;
+                            }
+                            a {
+                                height: 14.285%;
+                            }
+                        }
+                        .menu-big {
+                            top: 160px;
+                            &:before {
+                                left: 21%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         #content {
             .content-bottom-area {

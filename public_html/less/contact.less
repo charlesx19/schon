@@ -4,9 +4,38 @@
 
 .contact {
 
-    .cart-panel {
-        right: -2%;
+    #header {
+        .header {
+            &.full-width-header {
+                #nav {
+                    &.gray-nav {
+                        ul {
+                            & > div {
+                                color: #535353;
+                            }
+                            li {
+                                color: #535353;
+                            }
+                            a {
+                                color: #535353;
+                            }
+                            i {
+                                color: #535353;
+                            }
+                            .shortcut-icon-box {
+                                .shopping-cart {
+                                    &::after {
+                                        background: #535353;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
     
     #content {
         > div {
