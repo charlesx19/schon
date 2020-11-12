@@ -1,0 +1,108 @@
+
+.bannersPage {
+
+    #content {
+        .container {
+            padding: 110px 0 0 0;
+        }
+        
+        a {
+            display: block;
+        }
+
+        .row {
+            .outer-box {
+                padding: 0 12px 0 12px;
+            }
+            .inner-box {
+                width: 100%;
+                height: 100%;
+                background: #f5f5f5;
+            }
+        }
+
+        .twoLevel {
+            .row {
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .outer-box {
+                    flex: none;
+                }
+                .inner-box {
+                    height: 225px;
+                }
+            }
+        }
+
+        .header {
+            padding: 0 0 40px 0;
+            text-align: left;
+            background: none;
+            & > div {
+                display: flex;
+                align-items: center;
+            }
+            .title {
+                position: relative;
+                margin: 0;
+                font-size: 20px;
+                font-weight: 700;
+                color: #828282;
+            }
+            span {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                bottom: 8px;
+                margin-left: 5px;
+                border-bottom: 1px solid #cecece;
+            }
+        }
+
+        .row-1, .row-2, .row-3,
+        .row-4, .row-5 {
+            margin-bottom: 24px;
+        }
+
+        .row-1 {
+            height: 480px;
+            .inner-box {
+                padding: 40px;
+                .title {
+                    font-size: 20px;
+                }
+            }
+        }
+        .row-2 {
+            height: 565px;
+            .outer-box {
+                padding: 0 12px 0 12px;
+            }
+            .inner-box {
+
+            }
+            .twoLevel {
+                .row {
+                    .inner-box {
+                        height: 270px;
+                    }
+                }
+            }
+        }
+        .row-3 {
+            height: 210px;
+        }
+        .row-4 {
+            height: 582px;
+        }
+    }
+
+}
+
+
+// @import "searchRWD.less";
+
+
