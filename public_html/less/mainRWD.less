@@ -107,6 +107,17 @@
                 }
             }
         }
+
+        #search-modal {
+            .search-box {
+                input {
+                    width: 80%;
+                }
+                .icons {
+                    width: 15%;
+                }
+            }
+        }
     }
 
     .full-width-header {
@@ -263,6 +274,17 @@
                             background: #f8f8f8;
                         }
                     }
+                    .search {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 12.5%;
+                        width: 100vw;
+                        border-bottom: 1px solid #eee;
+                        &:hover {
+                            background: #f8f8f8;
+                        }
+                    }
                     .shopping-cart {
                         justify-content: center;
                         height: 12.5%;
@@ -299,6 +321,25 @@
                             background: #f8f8f8;
                         }
                     }
+                }
+            }
+        }
+
+        #search-modal {
+            &.open {
+                position: fixed;
+                width: 100%;
+                height: 87vh;
+                top: 90px;
+                z-index: 180;
+            }
+            .search-box {
+                width: 90%;
+                input {
+                    width: 80%;
+                }
+                .icons {
+                    width: 60%;
                 }
             }
         }
@@ -424,6 +465,30 @@
 }
 
 @media (max-width: 539.98px) {
+
+    #search-modal {
+
+        .container {
+            padding: 0;
+            height: 85vh;
+        }
+        .search-box {
+            flex-direction: column;
+            transform: translateY(-50%);
+            input {
+                width: 100%;
+            }
+            .icons {
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 80px;
+                i {
+                    font-size: 28px;
+                }
+            }
+        }
+    
+    }
 
     #news-letter {
         &:before {

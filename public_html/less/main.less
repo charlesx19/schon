@@ -532,6 +532,7 @@ ul {
 }
 
 #header {
+    position: relative;
     .header-top {
         width: 100%;
         height: 38px;
@@ -601,6 +602,7 @@ ul {
                 }
             }
             .search, .favorite {
+                cursor: pointer;
                 i {
                     font-size: 24px;
                 }
@@ -856,6 +858,70 @@ ul {
                     }
                 }
             }
+        }
+    }
+
+    #search-modal {
+        position: relative;
+        width: 100vw;
+        height: 0vh;
+        background: #f6f6f6;
+        overflow: hidden;
+        transition: .3s all ease-in;
+        &.open {
+            height: 82vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .search-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            height: 62px;
+            margin: auto;
+            input {
+                padding: 0 24px;
+                height: 100%;
+                width: 80%;
+                flex-shrink: 0;
+                border: none;
+                border-left: 1px solid #bdbdbd;
+                background: none;
+                font-size: 20px;
+                font-weight: 300;
+                color: #666;
+                &::-webkit-input-placeholder {
+                    color: #bdbdbd;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                width: 10%;
+                i {
+                    font-size: 20px;
+                    color: #bdbdbd;
+                    cursor: pointer;
+                }
+            }
+        }
+        .close-icon {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: 30px;
+            font-size: 20px;
+            text-align: center;
+            color: #bdbdbd;
+            cursor: pointer;
         }
     }
 }

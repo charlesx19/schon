@@ -20,14 +20,22 @@ $(document).ready(function(){
         } else {
             window.location.href = "productList.html";
         }
-        
     });
+
 
     $('#darker-filter-products').click(function(e){
         $('.products-menu').removeClass('open');
         $('.menu-big').removeClass('open');
         $('#darker-filter-products').removeClass('open');
         $('body').removeClass('modal-open');
+    });
+
+    $('.search').click(function(e){
+        $('#search-modal').toggleClass('open');
+    });
+
+    $('#search-modal .close-icon').click(function(e){
+        $('#search-modal').toggleClass('open');
     });
 
     $('.hambergerg').click(function(e){
