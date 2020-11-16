@@ -1,0 +1,155 @@
+.code404Page {
+    #content {
+        position: relative;
+        background-image: url("https://source.unsplash.com/1920x1080/?livingroom");
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        .container {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.6);
+        }
+        .row {
+            width: 100%;
+            height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .page-info {
+
+        }
+        .title {
+            margin-bottom: 25px;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .desc {
+            font-size: 15px;
+            font-weight: 300;
+            color: #fff;
+        }
+        .bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 38px;
+            height: 36px;
+            a {
+                display: inline-block;
+                height: 100%;
+                padding: 0 23px;
+                margin-right: 10px;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 36px;
+                background: #fff;
+                color: #545454;
+            }
+            .input-box {
+                position: relative;
+                height: 100%;
+                width: 63%;
+                &:before {
+                    position: absolute;
+                    content: '⚲';
+                    text-align: right;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    right: 15px;
+                    color: #fff;
+                    font-size: 22px;
+                    transform: rotate(-45deg) translate(0px, -5px);
+                    transform-origin: right;
+                    cursor: pointer;
+                }
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                padding: 0 23px;
+                line-height: 36px;
+                border: none;
+                border: 2px solid #fff;
+                background: none;
+                color: #fff;
+                &:focus {
+                    outline: none;
+                }
+                &::-webkit-input-placeholder {
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+        .statusCode {
+            font-size: 215px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .code404Page {
+        #content {
+            .row {
+                justify-content: center;
+                align-items: center;
+            }
+            .title, .statusCode, .desc {
+                text-align: center;
+            }
+            .bottom {
+                justify-content: center;
+                a {
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 539.98px) {
+    .code404Page {
+        #content {
+            .bottom {
+                display: block;
+                text-align: center;
+                .input-box {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+            .statusCode {
+                font-size: 12rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 320.98px) {
+    .code404Page {
+        #content {
+            .statusCode {
+                font-size: 8rem;
+            }
+        }
+    }
+}
